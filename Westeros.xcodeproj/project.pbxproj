@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55292F9922117D4C00ACD7F1 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55292F9822117D4C00ACD7F1 /* RepositoryTests.swift */; };
+		55292F9C22117E6100ACD7F1 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55292F9B22117E6100ACD7F1 /* Repository.swift */; };
 		555ED68F2208EA5000A78B14 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555ED68D2208EA5000A78B14 /* HouseDetailViewController.swift */; };
 		555ED6902208EA5000A78B14 /* HouseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 555ED68E2208EA5000A78B14 /* HouseDetailViewController.xib */; };
 		555ED69E2208F3B000A78B14 /* codeiscoming.png in Resources */ = {isa = PBXBuildFile; fileRef = 555ED69B2208F3B000A78B14 /* codeiscoming.png */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55292F9822117D4C00ACD7F1 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		55292F9B22117E6100ACD7F1 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		555ED68D2208EA5000A78B14 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
 		555ED68E2208EA5000A78B14 /* HouseDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseDetailViewController.xib; sourceTree = "<group>"; };
 		555ED69B2208F3B000A78B14 /* codeiscoming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = codeiscoming.png; path = ../../../../../../Downloads/codeiscoming.png; sourceTree = "<group>"; };
@@ -72,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55292F9A22117E4500ACD7F1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				55292F9B22117E6100ACD7F1 /* Repository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		555ED68C2208EA0F00A78B14 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +150,7 @@
 				55D07CCA220392B2007C03F4 /* Info.plist */,
 				55D07CD322039C3B007C03F4 /* HouseTests.swift */,
 				55D07CDA2203A8A7007C03F4 /* PersonTests.swift */,
+				55292F9822117D4C00ACD7F1 /* RepositoryTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -145,6 +158,7 @@
 		55D07CD522039E0C007C03F4 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				55292F9A22117E4500ACD7F1 /* Repositories */,
 				55D07CD622039E34007C03F4 /* House.swift */,
 				55D07CD82203A6E5007C03F4 /* Sigil.swift */,
 				55D07CDC2203A9EB007C03F4 /* Person.swift */,
@@ -257,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55292F9C22117E6100ACD7F1 /* Repository.swift in Sources */,
 				555ED6A32208FF0300A78B14 /* UIViewController+Navigation.swift in Sources */,
 				555ED68F2208EA5000A78B14 /* HouseDetailViewController.swift in Sources */,
 				55D07CD92203A6E5007C03F4 /* Sigil.swift in Sources */,
@@ -272,6 +287,7 @@
 			files = (
 				55D07CD422039C3B007C03F4 /* HouseTests.swift in Sources */,
 				55D07CDB2203A8A7007C03F4 /* PersonTests.swift in Sources */,
+				55292F9922117D4C00ACD7F1 /* RepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
