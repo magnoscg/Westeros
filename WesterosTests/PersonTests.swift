@@ -19,7 +19,9 @@ class PersonTests: XCTestCase {
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         starkSigil = Sigil(image: UIImage(), description: "Lobo Huargo")
-        starkHouse = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno")
+        let starkURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Stark")!
+        
+        starkHouse = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno", wikiURL: starkURL)
         ned = Person(name: "Eddard", alias: "Ned" , house: starkHouse)
     }
 

@@ -19,27 +19,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.backgroundColor = UIColor.red
+        window?.backgroundColor = .red
         
         //Crearnos el modelo
         let houses = Repository.local.houses
-
-        
-        //Creamos el controlador
-        
-        var controllers = [UIViewController]()
-        
-        for eachHouse in houses {
-            controllers.append(HouseDetailViewController(model: eachHouse).wrappedInNavigation())
-        }
-       
+  
         //Crear el combinador
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = controllers
+        tabBarController.viewControllers = houses.map {HouseDetailViewController(model: $0)
+            .wrappedInNavigation()}
                 
         //Asignamos el rootViewController del window
-        
         window?.rootViewController = tabBarController
         
         return true

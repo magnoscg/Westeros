@@ -23,6 +23,8 @@
 		55D07CD92203A6E5007C03F4 /* Sigil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D07CD82203A6E5007C03F4 /* Sigil.swift */; };
 		55D07CDB2203A8A7007C03F4 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D07CDA2203A8A7007C03F4 /* PersonTests.swift */; };
 		55D07CDD2203A9EB007C03F4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D07CDC2203A9EB007C03F4 /* Person.swift */; };
+		55FF2EDE22121BDE00DB7D81 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF2EDC22121BDE00DB7D81 /* WikiViewController.swift */; };
+		55FF2EDF22121BDE00DB7D81 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FF2EDD22121BDE00DB7D81 /* WikiViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		55D07CD82203A6E5007C03F4 /* Sigil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sigil.swift; sourceTree = "<group>"; };
 		55D07CDA2203A8A7007C03F4 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		55D07CDC2203A9EB007C03F4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		55FF2EDC22121BDE00DB7D81 /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
+		55FF2EDD22121BDE00DB7D81 /* WikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 			children = (
 				555ED68D2208EA5000A78B14 /* HouseDetailViewController.swift */,
 				555ED68E2208EA5000A78B14 /* HouseDetailViewController.xib */,
+				55FF2EDC22121BDE00DB7D81 /* WikiViewController.swift */,
+				55FF2EDD22121BDE00DB7D81 /* WikiViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55D07CBE220392B1007C03F4 /* LaunchScreen.storyboard in Resources */,
+				55FF2EDF22121BDE00DB7D81 /* WikiViewController.xib in Resources */,
 				555ED6A02208F3B000A78B14 /* targaryenSmall.jpg in Resources */,
 				55D07CBB220392B1007C03F4 /* Assets.xcassets in Resources */,
 				555ED69F2208F3B000A78B14 /* lannister.jpg in Resources */,
@@ -277,6 +284,7 @@
 				55D07CD92203A6E5007C03F4 /* Sigil.swift in Sources */,
 				55D07CD722039E34007C03F4 /* House.swift in Sources */,
 				55D07CB4220392AF007C03F4 /* AppDelegate.swift in Sources */,
+				55FF2EDE22121BDE00DB7D81 /* WikiViewController.swift in Sources */,
 				55D07CDD2203A9EB007C03F4 /* Person.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
