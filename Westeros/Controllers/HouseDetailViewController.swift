@@ -15,7 +15,7 @@ class HouseDetailViewController: UIViewController {
     @IBOutlet weak var sigilImageView: UIImageView!
     @IBOutlet weak var wordsLabel: UILabel!
     
-    let model: House
+    var model: House
     
     
     init (model: House) {
@@ -47,14 +47,38 @@ class HouseDetailViewController: UIViewController {
     }
     
     func setupUI() {
+        
+        // Añadir el boón para navegar hacia la wiki
         let wikiButton = UIBarButtonItem(title: "Wiki", style: .plain, target: self, action: #selector(displayWiki))
-        navigationItem.rightBarButtonItem = wikiButton
+        
+        
+        let membersButton = UIBarButtonItem(title: "Members", style: .plain, target: self, action: #selector(displayMembers))
+        
+        // Mostrar los botones
+        navigationItem.rightBarButtonItems = [membersButton, wikiButton]
     }
     
+    @objc func displayMembers(){
+        
+        // Creamos el controlador
+        let memberListViewController = MemberListViewController(model: model.sortedMembers )
+        
+        // Lo mostramos mediante push
+        
+        navigationController?.pushViewController(memberListViewController, animated: true)
+    }
     @objc func displayWiki() {
-        //Creamos el controlador
+        // Creamos el controlador
         let wikiViewController = WikiViewController(model: model)
-        //HAcemos push
+        
+        // Hacemos push
         navigationController?.pushViewController(wikiViewController, animated: true)
+    }
+}
+
+extension HouseDetailViewController: HouseListViewControllerDelegate{
+    func houseListViewController(_ viewcontroller: HouseListViewController, didSelectHouse house: House) {
+        self.model = house
+        syncModelWithView()
     }
 }
