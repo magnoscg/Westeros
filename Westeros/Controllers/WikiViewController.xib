@@ -22,21 +22,27 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-TJ-h96">
-                    <rect key="frame" x="0.0" y="142" width="375" height="525"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4jx-Y1-rzj">
+                    <rect key="frame" x="177.5" y="333.5" width="20" height="20"/>
+                </activityIndicatorView>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-TJ-h96">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <wkWebViewConfiguration key="configuration">
                         <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                         <wkPreferences key="preferences"/>
                     </wkWebViewConfiguration>
                 </wkWebView>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4jx-Y1-rzj">
-                    <rect key="frame" x="177" y="323" width="20" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jd6-TJ-h96" firstAttribute="centerX" secondItem="4jx-Y1-rzj" secondAttribute="centerX" id="Bt8-E8-ezv"/>
+                <constraint firstItem="jd6-TJ-h96" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="D7y-yR-IfK"/>
+                <constraint firstItem="jd6-TJ-h96" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Dxu-Hq-hLw"/>
+                <constraint firstItem="4jx-Y1-rzj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="HTX-mk-0TW"/>
+                <constraint firstItem="4jx-Y1-rzj" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="LXi-N3-8Qf"/>
+                <constraint firstItem="jd6-TJ-h96" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="mnC-mc-fox"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="133.59999999999999" y="154.27286356821591"/>
         </view>
