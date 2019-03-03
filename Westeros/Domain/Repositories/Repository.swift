@@ -93,7 +93,7 @@ extension LocalFactory: SeasonFactory {
             let season = Season(name: seasonJson.name, releaseDateSeason: dateformatter.date(from: seasonJson.releaseDateSeason)!)
             
             for episodeJson in seasonJson.episodes {
-                let episode = Episode(title: episodeJson.titulo, releaseDate: dateformatter.date(from: seasonJson.releaseDateSeason)!, season: season)
+                let episode = Episode(title: episodeJson.titulo, releaseDate: dateformatter.date(from: seasonJson.releaseDateSeason)!, dirigido: episodeJson.dirigido, escrito: episodeJson.escrito, resumen: episodeJson.resumen, season: season)
                     season.add(episodes: episode)
                 }
             seasonsResult.append(season)

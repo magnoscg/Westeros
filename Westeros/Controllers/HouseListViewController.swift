@@ -50,7 +50,7 @@ class HouseListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      
-        // DEscubrir cual es la casa que tenemos que mostar
+        // Descubrir cual es la casa que tenemos que mostar
         
         let house = model[indexPath.row]
         

@@ -13,13 +13,19 @@ final class Episode {
     //MARK: Properties
     let title: String
     let releaseDate: Date
+    let dirigido: String
+    let escrito: String
+    let resumen: String
     weak var season: Season?
     
     //Mark: Initialization
-    init(title: String , releaseDate: Date, season: Season?) {
+    init(title: String , releaseDate: Date, dirigido: String,escrito: String, resumen: String, season: Season?) {
         self.title = title
         self.releaseDate = releaseDate
         self.season = season
+        self.dirigido = dirigido
+        self.escrito = escrito
+        self.resumen = resumen
         
     }
 }
