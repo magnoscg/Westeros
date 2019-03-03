@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551FFB5222270ADD00F7926C /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551FFB5122270ADD00F7926C /* Season.swift */; };
+		551FFB5422270BCF00F7926C /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551FFB5322270BCF00F7926C /* Episode.swift */; };
+		5521A4C3222C002300122BE0 /* Season1.json in Resources */ = {isa = PBXBuildFile; fileRef = 5521A4C2222C002300122BE0 /* Season1.json */; };
+		5521A4C5222C00C100122BE0 /* Season2.json in Resources */ = {isa = PBXBuildFile; fileRef = 5521A4C4222C00C100122BE0 /* Season2.json */; };
 		55292F9922117D4C00ACD7F1 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55292F9822117D4C00ACD7F1 /* RepositoryTests.swift */; };
 		55292F9C22117E6100ACD7F1 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55292F9B22117E6100ACD7F1 /* Repository.swift */; };
 		555ED68F2208EA5000A78B14 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555ED68D2208EA5000A78B14 /* HouseDetailViewController.swift */; };
@@ -15,6 +19,9 @@
 		555ED69F2208F3B000A78B14 /* lannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555ED69C2208F3B000A78B14 /* lannister.jpg */; };
 		555ED6A02208F3B000A78B14 /* targaryenSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555ED69D2208F3B000A78B14 /* targaryenSmall.jpg */; };
 		555ED6A32208FF0300A78B14 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555ED6A22208FF0300A78B14 /* UIViewController+Navigation.swift */; };
+		55764E002228470D000DC482 /* SeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55764DFF2228470D000DC482 /* SeasonTests.swift */; };
+		55764E0222284EA0000DC482 /* EpisodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55764E0122284EA0000DC482 /* EpisodeTests.swift */; };
+		55764E06222863B0000DC482 /* EpisodeDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55764E05222863B0000DC482 /* EpisodeDecodable.swift */; };
 		557CF1F32222D13E005845DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CF1F22222D13E005845DE /* Constants.swift */; };
 		5598DEFA22216EFA00EDF31C /* MemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598DEF822216EFA00EDF31C /* MemberListViewController.swift */; };
 		5598DEFB22216EFA00EDF31C /* MemberListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5598DEF922216EFA00EDF31C /* MemberListViewController.xib */; };
@@ -28,6 +35,7 @@
 		55D07CD92203A6E5007C03F4 /* Sigil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D07CD82203A6E5007C03F4 /* Sigil.swift */; };
 		55D07CDB2203A8A7007C03F4 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D07CDA2203A8A7007C03F4 /* PersonTests.swift */; };
 		55D07CDD2203A9EB007C03F4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D07CDC2203A9EB007C03F4 /* Person.swift */; };
+		55D5CC3E2229C17B00CE2334 /* SeasonDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D5CC3D2229C17B00CE2334 /* SeasonDecodable.swift */; };
 		55FF2EDE22121BDE00DB7D81 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF2EDC22121BDE00DB7D81 /* WikiViewController.swift */; };
 		55FF2EDF22121BDE00DB7D81 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FF2EDD22121BDE00DB7D81 /* WikiViewController.xib */; };
 /* End PBXBuildFile section */
@@ -43,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		551FFB5122270ADD00F7926C /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		551FFB5322270BCF00F7926C /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		5521A4C2222C002300122BE0 /* Season1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Season1.json; path = ../../../../../../../Desktop/Season1.json; sourceTree = "<group>"; };
+		5521A4C4222C00C100122BE0 /* Season2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Season2.json; sourceTree = "<group>"; };
 		55292F9822117D4C00ACD7F1 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		55292F9B22117E6100ACD7F1 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		555ED68D2208EA5000A78B14 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +63,9 @@
 		555ED69C2208F3B000A78B14 /* lannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lannister.jpg; path = ../../../../../../Downloads/lannister.jpg; sourceTree = "<group>"; };
 		555ED69D2208F3B000A78B14 /* targaryenSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = targaryenSmall.jpg; path = ../../../../../../Downloads/targaryenSmall.jpg; sourceTree = "<group>"; };
 		555ED6A22208FF0300A78B14 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		55764DFF2228470D000DC482 /* SeasonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTests.swift; sourceTree = "<group>"; };
+		55764E0122284EA0000DC482 /* EpisodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTests.swift; sourceTree = "<group>"; };
+		55764E05222863B0000DC482 /* EpisodeDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDecodable.swift; sourceTree = "<group>"; };
 		557CF1F22222D13E005845DE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5598DEF822216EFA00EDF31C /* MemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewController.swift; sourceTree = "<group>"; };
 		5598DEF922216EFA00EDF31C /* MemberListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberListViewController.xib; sourceTree = "<group>"; };
@@ -68,6 +83,7 @@
 		55D07CD82203A6E5007C03F4 /* Sigil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sigil.swift; sourceTree = "<group>"; };
 		55D07CDA2203A8A7007C03F4 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		55D07CDC2203A9EB007C03F4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		55D5CC3D2229C17B00CE2334 /* SeasonDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonDecodable.swift; sourceTree = "<group>"; };
 		55FF2EDC22121BDE00DB7D81 /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 		55FF2EDD22121BDE00DB7D81 /* WikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				55292F9B22117E6100ACD7F1 /* Repository.swift */,
+				55D5CC3D2229C17B00CE2334 /* SeasonDecodable.swift */,
+				55764E05222863B0000DC482 /* EpisodeDecodable.swift */,
+				5521A4C2222C002300122BE0 /* Season1.json */,
+				5521A4C4222C00C100122BE0 /* Season2.json */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -172,6 +192,8 @@
 				55D07CD322039C3B007C03F4 /* HouseTests.swift */,
 				55D07CDA2203A8A7007C03F4 /* PersonTests.swift */,
 				55292F9822117D4C00ACD7F1 /* RepositoryTests.swift */,
+				55764DFF2228470D000DC482 /* SeasonTests.swift */,
+				55764E0122284EA0000DC482 /* EpisodeTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -181,6 +203,8 @@
 			children = (
 				55292F9A22117E4500ACD7F1 /* Repositories */,
 				55D07CD622039E34007C03F4 /* House.swift */,
+				551FFB5122270ADD00F7926C /* Season.swift */,
+				551FFB5322270BCF00F7926C /* Episode.swift */,
 				55D07CD82203A6E5007C03F4 /* Sigil.swift */,
 				55D07CDC2203A9EB007C03F4 /* Person.swift */,
 			);
@@ -271,11 +295,13 @@
 			files = (
 				55A90BFB221624A4005B34D4 /* HouseListTableViewController.xib in Resources */,
 				55D07CBE220392B1007C03F4 /* LaunchScreen.storyboard in Resources */,
+				5521A4C3222C002300122BE0 /* Season1.json in Resources */,
 				55FF2EDF22121BDE00DB7D81 /* WikiViewController.xib in Resources */,
 				555ED6A02208F3B000A78B14 /* targaryenSmall.jpg in Resources */,
 				5598DEFB22216EFA00EDF31C /* MemberListViewController.xib in Resources */,
 				55D07CBB220392B1007C03F4 /* Assets.xcassets in Resources */,
 				555ED69F2208F3B000A78B14 /* lannister.jpg in Resources */,
+				5521A4C5222C00C100122BE0 /* Season2.json in Resources */,
 				555ED6902208EA5000A78B14 /* HouseDetailViewController.xib in Resources */,
 				555ED69E2208F3B000A78B14 /* codeiscoming.png in Resources */,
 			);
@@ -299,10 +325,14 @@
 				557CF1F32222D13E005845DE /* Constants.swift in Sources */,
 				555ED6A32208FF0300A78B14 /* UIViewController+Navigation.swift in Sources */,
 				555ED68F2208EA5000A78B14 /* HouseDetailViewController.swift in Sources */,
+				551FFB5222270ADD00F7926C /* Season.swift in Sources */,
 				55D07CD92203A6E5007C03F4 /* Sigil.swift in Sources */,
 				5598DEFA22216EFA00EDF31C /* MemberListViewController.swift in Sources */,
+				551FFB5422270BCF00F7926C /* Episode.swift in Sources */,
 				55D07CD722039E34007C03F4 /* House.swift in Sources */,
 				55A90BFA221624A4005B34D4 /* HouseListViewController.swift in Sources */,
+				55764E06222863B0000DC482 /* EpisodeDecodable.swift in Sources */,
+				55D5CC3E2229C17B00CE2334 /* SeasonDecodable.swift in Sources */,
 				55D07CB4220392AF007C03F4 /* AppDelegate.swift in Sources */,
 				55FF2EDE22121BDE00DB7D81 /* WikiViewController.swift in Sources */,
 				55D07CDD2203A9EB007C03F4 /* Person.swift in Sources */,
@@ -313,6 +343,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55764E002228470D000DC482 /* SeasonTests.swift in Sources */,
+				55764E0222284EA0000DC482 /* EpisodeTests.swift in Sources */,
 				55D07CD422039C3B007C03F4 /* HouseTests.swift in Sources */,
 				55D07CDB2203A8A7007C03F4 /* PersonTests.swift in Sources */,
 				55292F9922117D4C00ACD7F1 /* RepositoryTests.swift in Sources */,

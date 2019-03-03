@@ -13,6 +13,13 @@ final class Repository {
     static let local = LocalFactory()
 }
 
+protocol SeasonFactory {
+    typealias SeasonFilter = (Season) -> Bool
+    var seasons: [Season] {get} // Solo get porque sera de solo lectura
+    func season(dated: Date) -> Season?
+    func seasons(filteredBy filter: SeasonFilter) -> [Season]
+}
+
 protocol HouseFactory {
     typealias HouseFilter = (House) -> Bool
     var houses: [House]{get} // Solo get porque sera de solo lectura
@@ -60,4 +67,66 @@ final class LocalFactory: HouseFactory {
         return houses.filter(theFilter)
     }
 
+}
+
+extension LocalFactory: SeasonFactory {
+    enum SeasonNumber: String {
+        case Season1 = "Season1"
+        case Season2 = "Season2"
+        /*case Season1 = "Season1"
+        case Season1 = "Season1"
+        case Season1 = "Season1"
+        case Season1 = "Season1"
+        case Season1 = "Season1"
+        case Season1 = "Season1"*/
+    }
+    
+    var seasons: [Season] {
+        var seasonsResult = [Season]()
+        let dateformatter = DateFormatter()
+        dateformatter.dateFormat = "dd/MM/yyyy"
+        for n in 1...2 {
+            
+            let number = "Season\(n)"
+            let seasonJson = SeasonDecoder(number: LocalFactory.SeasonNumber.init(rawValue: number)!)!
+            
+            let season = Season(name: seasonJson.name, releaseDateSeason: dateformatter.date(from: seasonJson.releaseDateSeason)!)
+            
+            for episodeJson in seasonJson.episodes {
+                let episode = Episode(title: episodeJson.titulo, releaseDate: dateformatter.date(from: seasonJson.releaseDateSeason)!, season: season)
+                    season.add(episodes: episode)
+                }
+            seasonsResult.append(season)
+            }
+        
+        return seasonsResult
+        }
+    
+    
+    func SeasonDecoder(number: SeasonNumber) -> SeasonDecodable? {
+        guard let json = Bundle.main.url(forResource: number.rawValue , withExtension: "json") else {
+            fatalError()
+        }
+        do{
+            let jsonData = try Data(contentsOf: json)
+            let seasonJson = try JSONDecoder().decode(SeasonDecodable.self, from: jsonData)
+            return seasonJson
+        } catch {
+            fatalError()
+        }
+    }
+    
+    
+    func season(dated date: Date) -> Season? {
+        let season = seasons.filter {$0.releaseDateSeason == date}.first
+        return season
+    }
+    
+    func seasons(filteredBy theFilter: (Season) -> Bool) -> [Season] {
+        return seasons.filter(theFilter)
+    }
+    
+
+    
+    
 }

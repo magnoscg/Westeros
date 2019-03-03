@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Crearnos el modelo
         let houses = Repository.local.houses
-  
+        let seasons = Repository.local.seasons
         
         //Creamos los controladores ( el que irá en master, y el que irá en el detail)
         let houseListViewController = HouseListViewController(model: houses)
@@ -46,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
         //Asignamos el rootViewController del window
         window?.rootViewController = splitViewController
+        
         
         return true
     }

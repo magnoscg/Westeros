@@ -1,0 +1,86 @@
+{
+    "name": "Season2",
+    "releaseDateSeason": "01/04/2012",
+    "episodes": [
+    {
+        "episodio": 1,
+        "titulo": "The North Remembers",
+        "dirigido": "Alan Taylor",
+        "escrito": "David Benioff y D. B. Weiss",
+        "fecha": "01/04/2012",
+        "resumen": "Tyrion llega para salvar la corona de Joffrey de viejas y nuevas amenazas. Daenerys busca agua y aliados en el Desierto Rojo. Jon Nieve y los miembros de la Guardia de la Noche se enfrentan a los salvajes más allá del Muro."
+    },
+    {
+        "episodio": 2,
+        "titulo": "The Night Lands",
+        "dirigido": "Alan Taylor",
+        "escrito": "David Benioff y D. B. Weiss",
+        "fecha": "08/04/2012",
+        "resumen": "Arya comparte un secreto con un recluta familiar. Un explorador regresa para darle noticias inesperadas a Dany. Theon vuelve a casa en las Islas del Hierro y a su familia verdadera. Tyrion imparte justicia y Jon es testigo de un terrible crimen."
+    },
+    {
+        "episodio": 3,
+        "titulo": "What Is Dead May Never Die",
+        "dirigido": "Alik Sakharov",
+        "escrito": "Bryan Cogman",
+        "fecha": "15/04/2012",
+        "resumen": "Tyrion desenmascara a un espía. Catelyn conoce a los nuevos reyes. Bran sueña y Theon se ahoga."
+    },
+    {
+        "episodio": 4,
+        "titulo": "Garden of Bones",
+        "dirigido": "David Petrarca",
+        "escrito": "Vanessa Taylor",
+        "fecha": "22/04/2012",
+        "resumen": "Catelyn intenta salvar a los reyes de ellos mismos. Tyrion practica la coerción. Robb conoce a alguien que viene del extranjero fuera de las puertas de la salvación. Dany encuentra un aliado. Melisandre arroja una gran nube sobre Bastión de Tormentas."
+    },
+    {
+        "episodio": 5,
+        "titulo": "The Ghost of Harrenhal",
+        "dirigido": "David Petrarca",
+        "escrito": "David Benioff y D. B. Weiss",
+        "fecha": "29/04/2012",
+        "resumen": "La rivalidad entre los Baratheon termina. Tyrion conoce el arma secreta de Cersei. Dany sufre una perdida. Arya cobra una deuda que desconocia tener. Jon y la Guardia de la Noche encuentran una fortaleza antigua y conocen una leyenda."
+    },
+    {
+        "episodio": 6,
+        "titulo": "The Old Gods and the New",
+        "dirigido": "David Nutter",
+        "escrito": "Vanessa Taylor",
+        "fecha": "6/05/2012",
+        "resumen": "Theon completa su golpe maestro. En Desembarco del Rey,los Lannister se despiden de Myrcella sin perder tiempo para que no corra peligro. Arya se enfrenta cara a cara con un visitante sorpresa. Robb y Catelyn reciben noticias cruciales."
+    },
+    {
+        "episodio": 7,
+        "titulo": "A Man Without Honor",
+        "dirigido": "David Nutter",
+        "escrito": "David Benioff y D. B. Weiss",
+        "fecha": "13/05/2012",
+        "resumen": "Jaime conoce a un pariente lejano. Daenerys recibe una invitación a la Casa de los Eternos. Theon lidera una reunión de búsqueda. Jon pierde su rumbo en territorio salvaje. Cersei aconseja a Sansa."
+    },
+    {
+        "episodio": 8,
+        "titulo": "The Prince of Winterfell",
+        "dirigido": "Alan Taylor",
+        "escrito": "David Benioff y D. B. Weiss",
+        "fecha": "20/05/2012",
+        "resumen": "En Invernalia, Theon recibe un visitante. Arya llama a Jaquen para pagar su deuda final de una forma desagradable. Robb es traicionado. Tyrion y Varys encuentran algo en común. Daenerys ignora el consejo de Jorah. Stannis y Davos se acercan a su destino."
+    },
+    {
+        "episodio": 9,
+        "titulo": "Blackwater",
+        "dirigido": "Neil Marshall",
+        "escrito": "George R. R. Martin",
+        "fecha": "27/05/2012",
+        "resumen": "Tyrion y los Lannister pelean por sus vidas mientras Stannis lleva a cabo el asalto a Desembarco del Rey. Daenerys pierde algo valioso."
+    },
+    {
+        "episodio": 10,
+        "titulo": "Valar Morghulis",
+        "dirigido": "Alan Taylor",
+        "escrito": "David Benioff y D. B. Weiss",
+        "fecha": "3/06/2012",
+        "resumen": "Joffrey reparte premios a sus súbditos y rompe su compromiso con Sansa Stark. Mientras, Theon pone a sus hombres en acción. Luwin ofrece un consejo final. Arya recibe un regalo de parte de Jaquen. Jon se prueba a sí mismo ante Qhorin. Daenerys busca a sus dragones y aprende una valiosa lección. Robb toma una decisión importante."
+    }]
+}
+    
