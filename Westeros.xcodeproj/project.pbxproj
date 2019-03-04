@@ -47,6 +47,11 @@
 		55D5CC3E2229C17B00CE2334 /* SeasonDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D5CC3D2229C17B00CE2334 /* SeasonDecodable.swift */; };
 		55FADC43222D4B93002C3EBB /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FADC41222D4B93002C3EBB /* MemberDetailViewController.swift */; };
 		55FADC44222D4B93002C3EBB /* MemberDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FADC42222D4B93002C3EBB /* MemberDetailViewController.xib */; };
+		55FADC4A222D99C8002C3EBB /* Season7.json in Resources */ = {isa = PBXBuildFile; fileRef = 55FADC45222D99C7002C3EBB /* Season7.json */; };
+		55FADC4B222D99C8002C3EBB /* Season5.json in Resources */ = {isa = PBXBuildFile; fileRef = 55FADC46222D99C8002C3EBB /* Season5.json */; };
+		55FADC4C222D99C8002C3EBB /* Season3.json in Resources */ = {isa = PBXBuildFile; fileRef = 55FADC47222D99C8002C3EBB /* Season3.json */; };
+		55FADC4D222D99C8002C3EBB /* Season4.json in Resources */ = {isa = PBXBuildFile; fileRef = 55FADC48222D99C8002C3EBB /* Season4.json */; };
+		55FADC4E222D99C8002C3EBB /* Season6.json in Resources */ = {isa = PBXBuildFile; fileRef = 55FADC49222D99C8002C3EBB /* Season6.json */; };
 		55FF2EDE22121BDE00DB7D81 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF2EDC22121BDE00DB7D81 /* WikiViewController.swift */; };
 		55FF2EDF22121BDE00DB7D81 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FF2EDD22121BDE00DB7D81 /* WikiViewController.xib */; };
 /* End PBXBuildFile section */
@@ -106,6 +111,11 @@
 		55D5CC3D2229C17B00CE2334 /* SeasonDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonDecodable.swift; sourceTree = "<group>"; };
 		55FADC41222D4B93002C3EBB /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
 		55FADC42222D4B93002C3EBB /* MemberDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberDetailViewController.xib; sourceTree = "<group>"; };
+		55FADC45222D99C7002C3EBB /* Season7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Season7.json; sourceTree = "<group>"; };
+		55FADC46222D99C8002C3EBB /* Season5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Season5.json; sourceTree = "<group>"; };
+		55FADC47222D99C8002C3EBB /* Season3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Season3.json; sourceTree = "<group>"; };
+		55FADC48222D99C8002C3EBB /* Season4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Season4.json; sourceTree = "<group>"; };
+		55FADC49222D99C8002C3EBB /* Season6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Season6.json; sourceTree = "<group>"; };
 		55FF2EDC22121BDE00DB7D81 /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 		55FF2EDD22121BDE00DB7D81 /* WikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +146,11 @@
 				55764E05222863B0000DC482 /* EpisodeDecodable.swift */,
 				5521A4C2222C002300122BE0 /* Season1.json */,
 				5521A4C4222C00C100122BE0 /* Season2.json */,
+				55FADC47222D99C8002C3EBB /* Season3.json */,
+				55FADC48222D99C8002C3EBB /* Season4.json */,
+				55FADC46222D99C8002C3EBB /* Season5.json */,
+				55FADC49222D99C8002C3EBB /* Season6.json */,
+				55FADC45222D99C7002C3EBB /* Season7.json */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -328,20 +343,25 @@
 			files = (
 				55A90BFB221624A4005B34D4 /* HouseListTableViewController.xib in Resources */,
 				55D07CBE220392B1007C03F4 /* LaunchScreen.storyboard in Resources */,
+				55FADC4B222D99C8002C3EBB /* Season5.json in Resources */,
 				5521A4C3222C002300122BE0 /* Season1.json in Resources */,
 				5521A4D5222C3F0600122BE0 /* EpisodeListViewController.xib in Resources */,
+				55FADC4C222D99C8002C3EBB /* Season3.json in Resources */,
 				55FF2EDF22121BDE00DB7D81 /* WikiViewController.xib in Resources */,
 				555ED6A02208F3B000A78B14 /* targaryenSmall.jpg in Resources */,
 				5521A4CD222C309B00122BE0 /* SeasonListViewcontroller.xib in Resources */,
 				5598DEFB22216EFA00EDF31C /* MemberListViewController.xib in Resources */,
 				55D07CBB220392B1007C03F4 /* Assets.xcassets in Resources */,
+				55FADC4E222D99C8002C3EBB /* Season6.json in Resources */,
 				555ED69F2208F3B000A78B14 /* lannister.jpg in Resources */,
 				5521A4C5222C00C100122BE0 /* Season2.json in Resources */,
+				55FADC4D222D99C8002C3EBB /* Season4.json in Resources */,
 				555ED6902208EA5000A78B14 /* HouseDetailViewController.xib in Resources */,
 				555ED69E2208F3B000A78B14 /* codeiscoming.png in Resources */,
 				55FADC44222D4B93002C3EBB /* MemberDetailViewController.xib in Resources */,
 				5521A4D1222C334B00122BE0 /* SeasonDetailViewController.xib in Resources */,
 				5521A4D9222C3F3200122BE0 /* EpisodeDetailViewController.xib in Resources */,
+				55FADC4A222D99C8002C3EBB /* Season7.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

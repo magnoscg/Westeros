@@ -89,19 +89,18 @@ extension LocalFactory: SeasonFactory {
     enum SeasonNumber: String {
         case Season1 = "Season1"
         case Season2 = "Season2"
-        /*case Season1 = "Season1"
-        case Season1 = "Season1"
-        case Season1 = "Season1"
-        case Season1 = "Season1"
-        case Season1 = "Season1"
-        case Season1 = "Season1"*/
+        case Season3 = "Season3"
+        case Season4 = "Season4"
+        case Season5 = "Season5"
+        case Season6 = "Season6"
+        case Season7 = "Season7"
     }
     
     var seasons: [Season] {
         var seasonsResult = [Season]()
         let dateformatter = DateFormatter()
         dateformatter.dateFormat = "dd/MM/yyyy"
-        for n in 1...2 {
+        for n in 1...7 {
             
             let number = "Season\(n)"
             let seasonJson = SeasonDecoder(number: LocalFactory.SeasonNumber.init(rawValue: number)!)!

@@ -1,0 +1,86 @@
+﻿{
+    "name": "Temporada 4",
+    "releaseDateSeason": "06/04/2014",
+    "episodes": [
+        {
+            "episodio": 1,
+            "titulo": "Two Swords»«Dos espadas",
+            "dirigido": "D. B. Weiss",
+            "escrito": "David Benioff y D. B. Weiss",
+            "fecha": "06/04/2014",
+            "resumen": " Jon Nieve es sometido a juicio por su tiempo entre los salvajes. En su camino a Meereen, Daenerys descubre que no será bien recibida. En las Tierras de los Ríos, el Perro y Arya Stark tienen un encontronazo con soldados Lannister en una taberna.Tywin Lannister regala a su hijo Jaime,nuevo comandante de la Guardia Real, una espada de acero valyrio. Tyrion y Bronn reciben al díscolo príncipe Oberyn Martell, que busca venganza por las afrentas pasadas a su casa. Sansa,  mientras tanto, recibe un regalo inesperado de Dontos Hollard. En el norte, Ygritte y Tormund se reúnen con nuevos refuerzos. En el Castillo Negro"
+        },
+        {
+            "episodio": 2,
+            "titulo": "The Lion and the Rose",
+            "dirigido": "Alex Graves",
+            "escrito": "George R. R. Martin",
+            "fecha": "13/04/2013",
+            "resumen": "Ramsay Nieve recibe a su padre lord Roose Bolton en Fuerte Terror. Al norte del Muro, Bran emplea sus habilidades como cambiapieles. En Rocadragón, Melisandre ordena quemar vivos en una hoguera a varios hombres de Stannis Baratheon. Desembarco del Rey celebra la boda del rey Joffrey Baratheon con Margaery Tyrell, pero Joffrey es envenenado durante esta y  muere."
+        },
+        {
+            "episodio": 3,
+            "titulo": "Breaker of Chains",
+            "dirigido": "Alex Graves",
+            "escrito": "David Benioff y D. B. Weiss",
+            "fecha": "20/04/2014",
+            "resumen": "Daenerys y su ejército son recibidos por su campeón. Tras los acontecimientos de la boda del Rey, Sansa encuentra un aliado para escapar de Desembarco del Rey. Mientras tanto, Tywin Lannister y su hija Cersei pretenden condenar a Tyrion. En el Norte, Samwell Tarly hace a Gilly mudarse a Villa Topo para mantenerla a salvo, mientras los salvajes liderados por Tormund y Styr siguen atacando aldeas. En Rocadragón, Davos Seaworth da con una idea para procurar un ejército a la causa de Stannis. En las Tierras de los Ríos, el Perro y Arya Stark continúan su viaje hacia el Valle de Arryn. A las puertas de Meereen"
+        },
+        {
+            "episodio": 4,
+            "titulo": "Oathkeeper»",
+            "dirigido": "Michelle MacLaren",
+            "escrito": "Bryan Cogman",
+            "fecha": "27/04/2014",
+            "resumen": "Jaime Lannister encomienda a Brienne una misión. En el Muro, Jon Nieve reúne a un grupo de hermanos de la Guardia de la Noche para atacar a los amotinados del torreón de Craster, quienes han retenido a Bran y sus acompañantes. En Meereen,  Daenerys inicia su ofensiva. Más allá del muro, Karl Tanner que lidera a los amotinados del torreón, ordena a Rast que abandone a un bebé varón en el bosque por sugerencia de las esposas de Craster, donde luego un caminante blanco se lo lleva a un altar y el Rey de la Noche lo transforma."
+        },
+        {
+            "episodio": 5,
+            "titulo": "First of His Name",
+            "dirigido": "Michelle MacLaren",
+            "escrito": "David Benioff y D. B. Weiss",
+            "fecha": "4/05/2014",
+            "resumen": "Cersei planea influir en los jueces del proceso contra Tyrion. Lord Petyr Baelish y Sansa Stark llegan al Valle de Arryn, donde son recibidos por lady Lysa Arryn. Al otro lado del Mar Angosto, Daenerys decide quedarse un tiempo a gobernar en Meereen. Más allá del Muro, Jon Nieve y su grupo atacan el torreón de Craster."
+        },
+        {
+            "episodio": 6,
+            "titulo": "The Laws of Gods and Men",
+            "dirigido": "Alik Sakharov",
+            "escrito": "Bryan Cogman",
+            "fecha": "11/05/2014",
+            "resumen": "Stannis y Davos negocian un préstamo con el Banco de Hierro de Braavos. En Fuerte Terror, Yara Greyjoy pone en marcha un plan para liberar a su hermano Theon de los Bolton. En Desembarco del Rey da comienzo el juicio de Tyrion Lannister."
+        },
+        {
+            "episodio": 7,
+            "titulo": "Mockingbird",
+            "dirigido": "Alik Sakharov",
+            "escrito": "David Benioff y D. B. Weiss",
+            "fecha": "18/05/2014",
+            "resumen":  "En Desembarco del Rey,Tyrion recibe ayuda de un inesperado aliado. En el Muro, Jon Nieve solicita a la Guardia bloquear el paso a través del Muro para evitar que el ejército de Mance Rayder lo atraviese. En el Camino Real, Brienne y Pod reciben noticias del paradero de Arya Stark, que continua su viaje con el Perro. En el Valle, Petyr Baelish da a conocer sus verdaderos motivos respecto a Sansa."
+        },
+        {
+            "episodio": 8,
+            "titulo": "The Mountain and the Viper",
+            "dirigido": "Alex Graves",
+            "escrito": "David Benioff y D. B. Weiss",
+            "fecha": "1/06/2014",
+            "resumen": "Sansa es interrogada por el asesinato de su tía Lysa Arryn. Ramsay Nieve pone en marcha un plan para recuperar Foso Cailin. La noticia sobre el pasado de ser Jorah llega a Danaerys, que toma medidas drásticas. En Desembarco del Rey, acontece la resolución del juicio de Tyrion Lannister mediante un combate singular."
+        },
+        {
+            "episodio": 9,
+            "titulo": "The Watchers on the Wall",
+            "dirigido": "Neil Marshall",
+            "escrito": "David Benioff y D. B. Weiss",
+            "fecha": "8/06/2014",
+            "resumen": "La Guardia de la Noche defiende el Muro, en dos frentes, del ataque de los salvajes liderados por Mance Rayder, cuyo objetivo es pasar a través de este."
+        },
+        {
+            "episodio": 10,
+            "titulo": "The Children",
+            "dirigido": "Alex Graves",
+            "escrito": "David Benioff y D. B. Weiss",
+            "fecha": "15/06/2014",
+            "resumen": "Jon Nieve y Mance Rayder exponen términos de paz entre los Siete Reinos y el pueblo libre cuando son sorprendidos por un contingente de caballería. En Desembarco de Rey, Tywin insiste a Cersei con sus planes de matrimonio. En Meereen, Daenerys debe lidiar con los peligrosos instintos de sus dragones. Bran y su grupo llegan hasta su destino, pero son atacados por espectros. Brienne cruza su camino con el Perro y Arya. Jaime libera a Tyrion, quien antes de partir de Desembarco del Rey visita a una persona teniendo una desafortunada sorpresa y arregla su situación."
+        }
+    ]
+}

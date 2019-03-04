@@ -1,0 +1,62 @@
+﻿{
+    "name": "Temporada 7",
+    "releaseDateSeason": "12/04/2015",
+    "episodes": [
+        {
+            "episodio": 1,
+            "titulo": "Dragonstone",
+            "dirigido": "Jeremy Podeswa",
+            "escrito": "David Benioff & D. B. Weiss",
+            "fecha": "16/07/2017",
+            "resumen": "En Los Gemelos, Arya Stark envenena a los Frey restantes implicados en la 'Boda Roja'. En Desembarco del Rey, Cersei Lannister y Jaime Lannister tratan con Euron Greyjoy intentando hacer una alianza. En Invernalia, Jon Nieve perdona a los Karstark y a los Umber haciendo que le juren lealtad, y Sansa Stark advierte a Jon de la inminente ira de Cersei. En Antigua, Samwell Tarly comienza su entrenamiento, y un enfermo Jorah Mormont le pregunta por la llegada de Daenerys. Bran Stark llega al Muro y es recibido por Edd el Penas. Sandor Clegane con la Hermandad sin Estandartes se refugia en la casa de un granjero. En Rocadragón, Daenerys Targaryen y Tyrion Lannister junto con su ejército llegan a Rocadragón y exploran el castillo abandonado que fue antes habitado por Stannis Baratheon."
+        },
+        {
+            "episodio": 2,
+            "titulo": "Stormborn",
+            "dirigido": "Mark Mylod",
+            "escrito": "Bryan Cogman",
+            "fecha": "23/07/2017",
+            "resumen": "Daenerys comienza a pensar estrategias junto a sus aliados. Melisandre llega a Rocadragón y pide a Daenerys que convoque a el Rey del Norte Jon Nieve. Sam intenta curar de psoriagrís a Jorah. Cersei entabla alianzas con los Tarly. Jon Nieve decide acudir a la llamada de Daenerys dejando Invernalia en manos de Sansa. Arya decide cambiar su rumbo hacia Invernalia, reencontrándose con su viejo amigo Pastel Caliente y su loba huargo Nymeria. Euron ataca la flota de su sobrina Yara."
+        },
+        {
+            "episodio": 3,
+            "titulo": "The Queen's Justice",
+            "dirigido": "Mark Mylod",
+            "escrito": "David Benioff & D. B. Weiss",
+            "fecha": "30/07/2017",
+            "resumen": "Jon Nieve conoce a Daenerys en Rocadragón. Euron entra triunfal en Desembarco del Rey y entrega a las rehenes Ellaria y Tyene Arena ante Cersei. Jorah es curado de psoriagrís. Cersei se cobra su venganza por la muerte de Myrcella. Los Inmaculados atacan Roca Casterly, aunque las fuerzas de los Lannister han abandonado en su mayoría el castillo para capturar Altojardín, que lleva a la muerte de Olenna Tyrell, no sin antes confesar ante Jaime que mató a Joffrey."
+        },
+        {
+            "episodio": 4,
+            "titulo": "The Spoils of War",
+            "dirigido": "Matt Shakman",
+            "escrito": "David Benioff & D. B. Weiss",
+            "fecha": "6/08/2017",
+            "resumen": "Jon muestra a Daenerys una cueva llena de vidriagón y unas pinturas rupestres de los Niños del Bosque sobre los Caminantes Blancos. Cersei negocia con el Banco de Hierro. Arya regresa a Invernalia y se reencuentra con sus hermanos. Después de perder la flota de Yara Greyjoy y el ejército y el apoyo económico de Dorne y Altojardín, Daenerys sale a atacar desde el lomo de Drogon a las huestes de los Lannister junto con una horda de salvajes dothrakis dispuestos a matar."
+        },
+        {
+            "episodio": 5,
+            "titulo": "Eastwatch",
+            "dirigido": "Matt Shakman",
+            "escrito": "Dave Hill",
+            "fecha": "13/08/2017",
+            "resumen": "Daenerys consigue una victoria y acaba con la familia Tarly. Jorah vuelve al servicio de Daenerys. Tyrion se reúne en secreto con Jaime para que convenza a Cersei para luchar contra los Caminantes Blancos. Cersei desvela a Jaime que está embarazada. Jon Nieve y compañía cruzan de nuevo el Muro en busca de un no-muerto para que el resto del continente les crea y luchen. Sam abandona Antigua cansado de ser ignorado."
+        },
+        {
+            "episodio": 6,
+            "titulo": "Beyond the Wall",
+            "dirigido": "Alan Taylor",
+            "escrito": "David Benioff & D. B. Weiss",
+            "fecha": "20/08/2017",
+            "resumen": "En Invernalia, Sansa y Arya comienzan una disputa debido a las artimañas de Meñique. Sansa descubre las caras de Arya. Jon y compañía se adentran más allá del Muro hasta dar con una horda de Caminantes Blancos, consiguen capturar a un no-muerto pero se ven atrapados por el ejército. Gendry consigue escapar hasta el Muro y manda un aviso de socorro a Daenerys. Thoros de Myr muere congelado tras sufrir una herida. Daenerys acude en su ayuda a pesar de los consejos de Tyrion. El Rey de la Noche arroja una lanza helada que acaba con la vida del dragón Viserion. Daenerys en shock, consigue escapar con todos menos Jon, que es salvado por su tío Benjen que termina sacrificandose por él. Jon herido llega al Muro y jura lealtad a Daenerys. El Rey de la Noche saca el cadáver de Viserion del lago helado y lo resucita como un dragón caminante blanco."
+        },
+        {
+            "episodio": 7,
+            "titulo": "The Dragon and the Wolf",
+            "dirigido": "Jeremy Podeswa",
+            "escrito": "David Benioff & D. B. Weiss",
+            "fecha": "27/08/2017",
+            "resumen": "En Desembarco del Rey, Daenerys, Jon, Cersei y sus consejeros se reúnen en Pozo Dragón para el encuentro donde un espectro se va a presentar como prueba. Cersei demanda como condición que Jon permanezca neutral mientras continúe la guerra con Daenerys. Él rechaza la petición por su promesa de servir a Daenerys provocando la retirada de Cersei. Tyrion habla con Cersei y aparentemente la convence de que se comprometa con la alianza. Posteriormente, Cersei le revela a Jaime que ella no tiene intención de enviar sus soldados para ayudar a la lucha de Daenerys y Jon contra los muertos. Su plan, en cambio, es derrotar al bando ganador, contratando a 20 000 mercenarios de la Compañía Dorada. Jaime, dispuesto a cumplir su palabra, la deja para cabalgar al Norte. Theon se gana el respeto de sus hombres para rescatar a su hermana Yara. En Invernalia, Meñique habla con Sansa sobre el amenazador comportamiento de Arya. Sansa convoca un juicio delante de los señores del Norte y del Valle señalando a Meñique en lugar de Arya. Arya lo ejecuta por sus crímenes contra la casa Stark y la casa Arryn. Mientras tanto, Daenerys y Jon tienen relaciones sexuales en el barco hacia Invernalia. En Guardiaoriente, el Rey de la Noche realiza su aparición a lomos de Viserion, el cual es ahora un dragón Caminante Blanco, destruyendo una porción del Muro y permitiendo al Ejército de los Muertos avanzar hacia el sur."
+        }
+    ]
+}
