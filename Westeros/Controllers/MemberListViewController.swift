@@ -21,6 +21,7 @@ class MemberListViewController: UIViewController {
     init(model: [Person]) {
         self.model = model
         super.init(nibName: nil, bundle: nil)
+        title = "Miembros de la Casa"
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,12 +41,12 @@ class MemberListViewController: UIViewController {
         super.viewWillAppear(animated)
         //nos damos de alta en las notificaciones, Tan pronto como te des de alta implementa el codigo para darte de baja.
         let notificationCenter = NotificationCenter.default
-        let name = Notification.Name(HOUSE_DID_CHANGE_NOTIFICATION_NAME)
         
         notificationCenter.addObserver(self,
                                        selector: #selector(houseDidChange(notification:)),
-                                       name: name,
+                                       name: Notification.Name(HOUSE_DID_CHANGE_NOTIFICATION_NAME),
                                        object: nil) // Object es quien manda la notificacion
+
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -69,12 +70,12 @@ class MemberListViewController: UIViewController {
         
         model = house.sortedMembers
         //Sincronizar modelo y vista
-        syncModelWithView()
+        tableView.reloadData()
+        
+        let backButton = UIBarButtonItem(title: house.name, style: .plain, target: self, action: Selector(("none")))
+        navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
     }
     
-    func syncModelWithView() {
-        tableView.reloadData()
-    }
 }
 
 
@@ -106,7 +107,30 @@ extension MemberListViewController: UITableViewDataSource {
         return cell!
     }
     
-}
-extension MemberListViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let person = model[indexPath.row]
+        
+        let memberDetailViewController = MemberDetailViewController(model: person)
+        
+        memberDetailViewController.delegate = self
+        
+        navigationController?.pushViewController(memberDetailViewController, animated: true)
+    }
     
 }
+extension MemberListViewController: UITableViewDelegate {
+    
+}
+
+extension MemberListViewController: MemberDetailViewControllerDelegate {
+    func memberDetailViewController(_ viewController: MemberDetailViewController, house: House) {
+        self.model = house.sortedMembers
+        tableView.reloadData()
+        viewController.delegate = self
+    }
+    
+    
+}
+
+
+

@@ -37,15 +37,18 @@ class EpisodeListViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(seasonNotification(notification:)), name: Notification.Name(SEASON_DID_CHANGE_NOTIFICATION_NAME), object: nil)
+        notificationCenter.addObserver(self, selector: #selector(seasonDidChange(notification:)), name: Notification.Name(SEASON_DID_CHANGE_NOTIFICATION_NAME), object: nil)
     }
     
     //Mark: Notification
     
-    @objc func seasonNotification(notification: Notification) {
+    @objc func seasonDidChange(notification: Notification) {
         
         let info = notification.userInfo!
-        guard let season = info[SEASON_KEY] as? Season else{return}
+        guard let season = info[SEASON_KEY] as? Season else{
+            return
+            
+        }
         
         model = season.sortedEpisodes
         
@@ -101,7 +104,7 @@ class EpisodeListViewController: UITableViewController {
         
         // Avisamos al delegado
         
-        delegate?.episodeListViewController(self, didSelectEpisode: episode)
+        //delegate?.episodeListViewController(self, didSelectEpisode: episode)
         
         // Emitir la misma info por notificaciones
         //let notificationCenter = NotificationCenter.default
@@ -123,33 +126,5 @@ class EpisodeListViewController: UITableViewController {
          navigationController?.pushViewController(houseDetailViewController, animated: true)*/
     }
 }
-/*
-extension EpisodeListViewController {
-    func saveLastSelectedEpisode(at index: Int){
-        // UserDefaults será nuestro motor de persistencia
-        let userDefaults = UserDefaults.standard
-        
-        // Escribimnos el index en una key
-        userDefaults.set(index,forKey: LAST_EPISODE_KEY)
-        
-        // Guardamos
-        userDefaults.synchronize() // POR SI ACASO (DEPRECATED EN BREVES)
-    }
-    
-    func lastSelectedHouse() -> Episode {
-        // UserDefaults , lo recuperamos
-        let userDefaults = UserDefaults.standard
-        
-        // Leemos de nuestro motor de persistencia
-        let index = userDefaults.integer(forKey: LAST_EPISODE_KEY) // 0 es default
-        
-        // Devolvemos el episodio situado en el index
-        return episode(at: index)
-    }
-    
-    func episode(at index: Int) -> Episode {
-        return model[index]
-    }
-    
-}*/
+
 

@@ -16,7 +16,7 @@
 		5521A4D0222C334B00122BE0 /* SeasonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521A4CE222C334B00122BE0 /* SeasonDetailViewController.swift */; };
 		5521A4D1222C334B00122BE0 /* SeasonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5521A4CF222C334B00122BE0 /* SeasonDetailViewController.xib */; };
 		5521A4D4222C3F0600122BE0 /* EpisodeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521A4D2222C3F0600122BE0 /* EpisodeListViewController.swift */; };
-		5521A4D5222C3F0600122BE0 /* EpisodeListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5521A4D3222C3F0600122BE0 /* EpisodeListTableViewController.xib */; };
+		5521A4D5222C3F0600122BE0 /* EpisodeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5521A4D3222C3F0600122BE0 /* EpisodeListViewController.xib */; };
 		5521A4D8222C3F3200122BE0 /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521A4D6222C3F3200122BE0 /* EpisodeDetailViewController.swift */; };
 		5521A4D9222C3F3200122BE0 /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5521A4D7222C3F3200122BE0 /* EpisodeDetailViewController.xib */; };
 		5521A4DB222C797E00122BE0 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521A4DA222C797E00122BE0 /* MasterViewController.swift */; };
@@ -45,6 +45,8 @@
 		55D07CDB2203A8A7007C03F4 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D07CDA2203A8A7007C03F4 /* PersonTests.swift */; };
 		55D07CDD2203A9EB007C03F4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D07CDC2203A9EB007C03F4 /* Person.swift */; };
 		55D5CC3E2229C17B00CE2334 /* SeasonDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D5CC3D2229C17B00CE2334 /* SeasonDecodable.swift */; };
+		55FADC43222D4B93002C3EBB /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FADC41222D4B93002C3EBB /* MemberDetailViewController.swift */; };
+		55FADC44222D4B93002C3EBB /* MemberDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FADC42222D4B93002C3EBB /* MemberDetailViewController.xib */; };
 		55FF2EDE22121BDE00DB7D81 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF2EDC22121BDE00DB7D81 /* WikiViewController.swift */; };
 		55FF2EDF22121BDE00DB7D81 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FF2EDD22121BDE00DB7D81 /* WikiViewController.xib */; };
 /* End PBXBuildFile section */
@@ -69,7 +71,7 @@
 		5521A4CE222C334B00122BE0 /* SeasonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonDetailViewController.swift; sourceTree = "<group>"; };
 		5521A4CF222C334B00122BE0 /* SeasonDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonDetailViewController.xib; sourceTree = "<group>"; };
 		5521A4D2222C3F0600122BE0 /* EpisodeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListViewController.swift; sourceTree = "<group>"; };
-		5521A4D3222C3F0600122BE0 /* EpisodeListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeListTableViewController.xib; sourceTree = "<group>"; };
+		5521A4D3222C3F0600122BE0 /* EpisodeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeListViewController.xib; sourceTree = "<group>"; };
 		5521A4D6222C3F3200122BE0 /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		5521A4D7222C3F3200122BE0 /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
 		5521A4DA222C797E00122BE0 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,8 @@
 		55D07CDA2203A8A7007C03F4 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		55D07CDC2203A9EB007C03F4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		55D5CC3D2229C17B00CE2334 /* SeasonDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonDecodable.swift; sourceTree = "<group>"; };
+		55FADC41222D4B93002C3EBB /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
+		55FADC42222D4B93002C3EBB /* MemberDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberDetailViewController.xib; sourceTree = "<group>"; };
 		55FF2EDC22121BDE00DB7D81 /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 		55FF2EDD22121BDE00DB7D81 /* WikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,10 +156,12 @@
 				5521A4CE222C334B00122BE0 /* SeasonDetailViewController.swift */,
 				5521A4CF222C334B00122BE0 /* SeasonDetailViewController.xib */,
 				5521A4D2222C3F0600122BE0 /* EpisodeListViewController.swift */,
-				5521A4D3222C3F0600122BE0 /* EpisodeListTableViewController.xib */,
+				5521A4D3222C3F0600122BE0 /* EpisodeListViewController.xib */,
 				5521A4D6222C3F3200122BE0 /* EpisodeDetailViewController.swift */,
 				5521A4D7222C3F3200122BE0 /* EpisodeDetailViewController.xib */,
 				5521A4DA222C797E00122BE0 /* MasterViewController.swift */,
+				55FADC41222D4B93002C3EBB /* MemberDetailViewController.swift */,
+				55FADC42222D4B93002C3EBB /* MemberDetailViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -323,7 +329,7 @@
 				55A90BFB221624A4005B34D4 /* HouseListTableViewController.xib in Resources */,
 				55D07CBE220392B1007C03F4 /* LaunchScreen.storyboard in Resources */,
 				5521A4C3222C002300122BE0 /* Season1.json in Resources */,
-				5521A4D5222C3F0600122BE0 /* EpisodeListTableViewController.xib in Resources */,
+				5521A4D5222C3F0600122BE0 /* EpisodeListViewController.xib in Resources */,
 				55FF2EDF22121BDE00DB7D81 /* WikiViewController.xib in Resources */,
 				555ED6A02208F3B000A78B14 /* targaryenSmall.jpg in Resources */,
 				5521A4CD222C309B00122BE0 /* SeasonListViewcontroller.xib in Resources */,
@@ -333,6 +339,7 @@
 				5521A4C5222C00C100122BE0 /* Season2.json in Resources */,
 				555ED6902208EA5000A78B14 /* HouseDetailViewController.xib in Resources */,
 				555ED69E2208F3B000A78B14 /* codeiscoming.png in Resources */,
+				55FADC44222D4B93002C3EBB /* MemberDetailViewController.xib in Resources */,
 				5521A4D1222C334B00122BE0 /* SeasonDetailViewController.xib in Resources */,
 				5521A4D9222C3F3200122BE0 /* EpisodeDetailViewController.xib in Resources */,
 			);
@@ -368,6 +375,7 @@
 				55764E06222863B0000DC482 /* EpisodeDecodable.swift in Sources */,
 				5521A4D8222C3F3200122BE0 /* EpisodeDetailViewController.swift in Sources */,
 				55D5CC3E2229C17B00CE2334 /* SeasonDecodable.swift in Sources */,
+				55FADC43222D4B93002C3EBB /* MemberDetailViewController.swift in Sources */,
 				55D07CB4220392AF007C03F4 /* AppDelegate.swift in Sources */,
 				5521A4CC222C309B00122BE0 /* SeasonListViewcontroller.swift in Sources */,
 				55FF2EDE22121BDE00DB7D81 /* WikiViewController.swift in Sources */,
