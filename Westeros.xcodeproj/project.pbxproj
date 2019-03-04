@@ -19,6 +19,7 @@
 		5521A4D5222C3F0600122BE0 /* EpisodeListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5521A4D3222C3F0600122BE0 /* EpisodeListTableViewController.xib */; };
 		5521A4D8222C3F3200122BE0 /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521A4D6222C3F3200122BE0 /* EpisodeDetailViewController.swift */; };
 		5521A4D9222C3F3200122BE0 /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5521A4D7222C3F3200122BE0 /* EpisodeDetailViewController.xib */; };
+		5521A4DB222C797E00122BE0 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521A4DA222C797E00122BE0 /* MasterViewController.swift */; };
 		55292F9922117D4C00ACD7F1 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55292F9822117D4C00ACD7F1 /* RepositoryTests.swift */; };
 		55292F9C22117E6100ACD7F1 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55292F9B22117E6100ACD7F1 /* Repository.swift */; };
 		555ED68F2208EA5000A78B14 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555ED68D2208EA5000A78B14 /* HouseDetailViewController.swift */; };
@@ -71,6 +72,7 @@
 		5521A4D3222C3F0600122BE0 /* EpisodeListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeListTableViewController.xib; sourceTree = "<group>"; };
 		5521A4D6222C3F3200122BE0 /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		5521A4D7222C3F3200122BE0 /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
+		5521A4DA222C797E00122BE0 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		55292F9822117D4C00ACD7F1 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		55292F9B22117E6100ACD7F1 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		555ED68D2208EA5000A78B14 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				5521A4D3222C3F0600122BE0 /* EpisodeListTableViewController.xib */,
 				5521A4D6222C3F3200122BE0 /* EpisodeDetailViewController.swift */,
 				5521A4D7222C3F3200122BE0 /* EpisodeDetailViewController.xib */,
+				5521A4DA222C797E00122BE0 /* MasterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5521A4DB222C797E00122BE0 /* MasterViewController.swift in Sources */,
 				5521A4D0222C334B00122BE0 /* SeasonDetailViewController.swift in Sources */,
 				5521A4D4222C3F0600122BE0 /* EpisodeListViewController.swift in Sources */,
 				55292F9C22117E6100ACD7F1 /* Repository.swift in Sources */,

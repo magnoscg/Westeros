@@ -11,6 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var masterViewController: MasterViewController?
     var window: UIWindow?
 
 
@@ -25,7 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let houses = Repository.local.houses
         let seasons = Repository.local.seasons
         
-        //Creamos los controladores ( el que irá en master, y el que irá en el detail)
+        masterViewController = MasterViewController(houses: houses, seasons: seasons)
+        //Asignamos el rootViewController del window*/
+        window?.rootViewController = masterViewController
+        
+        return true
+        
+        
+        
+        
+        
+       /* //Creamos los controladores ( el que irá en master, y el que irá en el detail)
         let houseListViewController = HouseListViewController(model: houses)
         let seasonListViewController = SeasonListViewcontroller(model: seasons)
         
@@ -41,19 +52,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Un objeto puede ser delegado de muchos otros objetos
         houseListViewController.delegate = houseDetailViewController
         seasonListViewController.delegate = seasonDetailViewController
-        
+ 
+        //UItabBar
+       
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [houseListViewController.wrappedInNavigation(),seasonListViewController.wrappedInNavigation()]
         
         // Creamos el split view controller y asignamos los controladores
         let splitViewController = UISplitViewController()
-        splitViewController.viewControllers = [seasonListViewController.wrappedInNavigation(), seasonDetailViewController.wrappedInNavigation()]
-        /*let splitViewController = UISplitViewController()
+        splitViewController.viewControllers = [tabBarController, houseDetailViewController.wrappedInNavigation(),seasonDetailViewController.wrappedInNavigation()]
+        
+        
+        let splitViewController = UISplitViewController()
         splitViewController.viewControllers = [houseListViewController.wrappedInNavigation(), houseDetailViewController.wrappedInNavigation()]*/
-                
-        //Asignamos el rootViewController del window
-        window?.rootViewController = splitViewController
         
-        
-        return true
     }
 }
+
 
