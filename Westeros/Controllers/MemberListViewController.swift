@@ -14,7 +14,7 @@ class MemberListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     //MARK: Properties
-    let model: [Person]
+    var model: [Person]
     
     //Mark: Initialization
     
@@ -34,6 +34,46 @@ class MemberListViewController: UIViewController {
         // no olvidar
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //nos damos de alta en las notificaciones, Tan pronto como te des de alta implementa el codigo para darte de baja.
+        let notificationCenter = NotificationCenter.default
+        let name = Notification.Name(HOUSE_DID_CHANGE_NOTIFICATION_NAME)
+        
+        notificationCenter.addObserver(self,
+                                       selector: #selector(houseDidChange(notification:)),
+                                       name: name,
+                                       object: nil) // Object es quien manda la notificacion
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // Nos damos de baja en las notificaciones
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.removeObserver(self)
+        
+    }
+    
+    //Mark: Notification
+    
+    @objc func houseDidChange(notification: Notification) {
+        //Sacar el userInfo y Sacar la casa del UserInfo
+        guard let info = notification.userInfo,
+            let house = info[HOUSE_KEY] as? House else {
+                return
+        }
+        
+        // Actualizar mi modelo
+        
+        model = house.sortedMembers
+        //Sincronizar modelo y vista
+        syncModelWithView()
+    }
+    
+    func syncModelWithView() {
+        tableView.reloadData()
     }
 }
 
@@ -65,7 +105,7 @@ extension MemberListViewController: UITableViewDataSource {
         // Devolver la celda
         return cell!
     }
-        
+    
 }
 extension MemberListViewController: UITableViewDelegate{
     
