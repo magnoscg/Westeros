@@ -1,0 +1,87 @@
+{
+    "name": "Temporada 1",
+    "releaseDateSeason": "17/04/2011",    
+    "episodes": [
+        {
+            "episodio": 1,
+            "titulo": "Winter Is Coming",
+            "dirigido": "Tim Van Patten",
+            "escrito": "David Benioff & D. B. Weiss",
+            "fecha": "17/04/2011",
+            "resumen": "El rey Robert Baratheon de Poniente viaja al Norte para ofrecerle a su viejo amigo Ned Stark, Guardián del Norte y Señor de Invernalia, el puesto de Mano del Rey. La esposa de Ned, Catelyn, recibe una carta de su hermana Lysa que implica a miembros de la familia real en el asesinato de su marido Jon Arryn, la anterior Mano del Rey. Bran, uno de los hijos de Ned y Catelyn, descubre a la reina Cersei y a su hermano Jaime teniendo relaciones sexuales. Mientras tanto, al otro lado del mar Angosto, el príncipe exiliado Viserys Targaryen forja una alianza para recuperar el Trono de Hierro: dará a su hermana Daenerys en matrimonio al salvaje dothraki Khal Drogo a cambio de su ejército."
+        },
+        {
+            "episodio": 2,
+            "titulo": "The Kingsroad",
+            "dirigido": "Tim Van Patten",
+            "escrito": "David Benioff & D. B. Weiss",
+            "fecha": "24/04/2011",
+            "resumen": "Tras aceptar su nuevo rol como Mano del Rey, Ned parte hacia Desembarco del Rey con sus hijas Sansa y Arya. Jon Nieve, el hijo bastardo de Ned, se dirige al Muro para unirse a la Guardia de la Noche. Tyrion Lannister, el hermano menor de la Reina, decide no ir con el resto de la familia real al sur y acompaña a Jon en su viaje al Muro. Viserys sigue esperando su momento de ganar el Trono de Hierro y Daenerys centra su atención en aprender cómo gustarle a su nuevo esposo, Drogo."
+        },
+        {
+            "episodio": 3,
+            "titulo": "Lord Snow",
+            "dirigido": "Brian Kirk",
+            "escrito": "David Benioff & D. B. Weiss",
+            "fecha": "01/05/2011",
+            "resumen": "Ned se une al Consejo Privado del Rey en Desembarco del Rey, la capital de los Siete Reinos, y descubre la mala administración que sufre Poniente. Catelyn decide ir de incógnito al sur para alertar a su esposo de los Lannister. Arya inicia su entrenamiento con la espada. Bran despierta tras su caída y no recuerda nada. Jon se entrena para adaptarse a su nueva vida en el Muro. Daenerys comienza a asumir su rol como khaleesi de Drogo y se enfrenta a Viserys."
+        },
+
+        {
+            "episodio": 4,
+            "titulo": "Cripples , Bastards, and Broken Things",
+            "dirigido": "Brian Kirk",
+            "escrito": "Bryan Cogman",
+            "fecha": "08/05/2011",
+            "resumen": "Ned busca pistas para tratar de explicar la muerte de Jon Arryn. Robert celebra un torneo en honor a Ned. Jon toma medidas para proteger a Samwell Tarly, otro recluta de la Guardia de la Noche, de los abusos del resto de sus compañeros. Viserys, frustrado, se enfrenta a su hermana. Sansa sueña con una vida como reina de Joffrey. Catelyn, de camino a Invernalia, acude a los aliados de su padre para apresar a Tyrion al creerle culpable del intento de asesinato de Bran."
+        },
+        {
+            "episodio": 5,
+            "titulo": "The Wolf and the Lion",
+            "dirigido": "Brian Kirk",
+            "escrito": "David Benioff & D. B. Weiss",
+            "fecha": "15/05/2011",
+            "resumen": "Robert y Ned discuten sobre cómo deben manejar la alianza entre la familia Targaryen y los dothraki. Catelyn lleva a Tyrion hasta el Nido de Águilas, la casa de su hermana Lysa. Las noticias de la captura de Tyrion llegan a Desembarco del Rey y Jaime le exige respuestas a Ned."
+        },
+        {
+            "episodio": 6,
+            "titulo": "A Golden Crown",
+            "dirigido": "Daniel Minahan",
+            "escrito": "Historia de : David Benioff & D. B. Weiss Guión de : Jane Espenson & David Benioff & D. B. Weiss",
+            "fecha": "22/05/2011",
+            "resumen": "Viserys amenaza a su hermana Daenerys delante de Drogo cuando éste se niega a pagar la deuda, por lo que muere a manos del dothraki. Ned gobierna desde el Trono de Hierro mientras el rey Robert sale de caza y descubre el secreto que Jon Arryn averiguó antes de morir."
+        },
+        {
+            "episodio": 7,
+            "titulo": "You Win or You Die",
+            "dirigido": "Daniel Minahan",
+            "escrito": "David Benioff & D. B. Weiss",
+            "fecha": "29/05/2011",
+            "resumen": "Ned se enfrenta a Cersei por la muerte de Jon Arryn. Un herido Robert nombra a Ned regente hasta que su hijo Joffrey sea mayor de edad. Ned pide ayuda a Meñique para asegurar la cooperación de la Guardia de la Ciudad en caso de que los Lannister no colaboren y revela que Joffrey no es hijo de Robert, sino de Jaime, lo que convierte a Stannis Baratheon, hermano mayor de Robert, en el verdadero heredero. Meñique, no obstante, traiciona a Ned y este es apresado y sus hombres asesinados. Jon toma los votos de la Guardia de la Noche. Drogo convoca a su ejército para invadir Poniente tras descubrir que Robert conspiraba para envenenar a Daenerys."
+        },
+        {
+            "episodio": 8,
+            "titulo": "The Pointy End",
+            "dirigido": "Daniel Minahan",
+            "escrito": "George R. R. Martin",
+            "fecha": "5/06/2011",
+            "resumen": "Robb convoca a los banderizos de su padre para ir en su rescate. Sansa suplica a Joffrey para salvar la vida de Ned. Jon y la Guardia de la Noche se preparan para enfrentarse a un antiguo enemigo del otro lado del Muro. El ejército de Drogo marcha al oeste en dirección hacia los Siete Reinos."
+        },
+        {
+            "episodio": 9,
+            "titulo": "Baelor",
+            "dirigido": "Alan Taylor",
+            "escrito": "David Benioff & D. B. Weiss",
+            "fecha": "12/06/2011",
+            "resumen": "Los familias Stark y Lannister se preparan para combatir entre ellos. Tyrion lleva a sus aliados bárbaros a la batalla, mientras que Robb y Catelyn negocian para obtener la ayuda de Lord Walder Frey. Con Drogo moribundo debido una herida infectada, Daenerys utiliza la magia de una maegi para salvarle la vida. El maestre Aemon revela a Jon su parentesco con los Targaryen y el precio de la lealtad, ya que éste está preocupado por los eventos que no conciernen al Muro. En un último intento para salvarse y a sus hijas, Ned confiesa falsamente su conspiración y declara a Joffrey como el legítimo heredero al Trono de Hierro. Joffrey lo decapita sin tener en cuenta su declaración."
+        },
+        {
+            "episodio": 10,
+            "titulo": "Fire and Blood",
+            "dirigido": "Alan Taylor",
+            "escrito": "David Benioff & D. B. Weiss",
+            "fecha": "19/06/2011",
+            "resumen": "Tras la ejecución de Ned, los norteños proclaman a Robb como su Rey. Con Jaime capturado por los Stark, Lord Tywin Lannister asigna a su hijo Tyrion como Mano del Rey para mantener a Joffrey y Cersei bajo control. Jon abandona su puesto en el Muro para vengar a su padre, pero sus amigos lo persiguen y lo convencen para quedarse. La Guardia de la Noche parte a una expedición más allá del Muro. El hijo nonato de Daenerys muere y Drogo se encuentra en estado vegetativo debido a la magia de la «maegi» traidora. Incapaz de soportar la ruina de su marido, Daenerys termina con su vida y prepara una pira funeraria en la que quema a la «maegi» viva junto con el cuerpo de Drogo y sus tres huevos de dragón. Además, ella misma entra en la pira y cuando esta se apaga Daenerys se eleva, sana y salva, flanqueada por tres dragones recién nacidos."
+        }
+    ]
+}
