@@ -20,14 +20,23 @@ protocol SeasonFactory {
     func seasons(filteredBy filter: SeasonFilter) -> [Season]
 }
 
+enum HouseName: String {
+    case Stark = "Stark"
+    case Lannister = "Lannister"
+    case Targarien = "Targaryen"
+}
+
 protocol HouseFactory {
     typealias HouseFilter = (House) -> Bool
     var houses: [House]{get} // Solo get porque sera de solo lectura
     func house(named: String) -> House?
+    func house(named name: HouseName) -> House?
     func houses(filteredBy filter: HouseFilter) -> [House]
 }
 
 final class LocalFactory: HouseFactory {
+
+    
     var houses: [House] {
         //Creacion de casas
         let starkSigil = Sigil(image: UIImage(named: "codeiscoming")!, description: "Lobo Huargo")
@@ -63,6 +72,13 @@ final class LocalFactory: HouseFactory {
         let house = houses.filter {$0.name.uppercased() == name.uppercased()}.first
         return house
     }
+    
+    func house(named name: HouseName) -> House? {
+        let houseName = house(named: name.rawValue)
+        return houseName
+    }
+    
+    
     func houses (filteredBy theFilter: (House) -> Bool) -> [House] {
         return houses.filter(theFilter)
     }

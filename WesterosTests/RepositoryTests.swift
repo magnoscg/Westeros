@@ -49,4 +49,11 @@ class RepositoryTests: XCTestCase {
         }
         XCTAssertEqual(filtered.count, 1)
     }
+    
+    func testLocalRepositoryReturnsHousesBynameTypeSafe() {
+        let houseName = Repository.local.house(named: "sTark")
+        XCTAssertNotNil(houseName)
+        XCTAssertEqual(houseName?.name, "Stark")
+        
+    }
 }

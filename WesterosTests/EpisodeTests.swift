@@ -26,8 +26,8 @@ class EpisodeTest: XCTestCase {
         episode1ReleaseDate = formatter.date(from: "01/04/2012")
         episode2ReleaseDate = formatter.date(from: "08/04/2012")
         
-        episode1 = Episode(title: "El norte no olvida", releaseDate: episode1ReleaseDate, season: season)
-        episode2 = Episode(title: "Las tierras de la noche", releaseDate: episode2ReleaseDate, season: season)
+        episode1 = Episode(title: "El norte no olvida", releaseDate: episode1ReleaseDate, dirigido: "Alan Taylor", escrito: "D.B. Weiss", resumen: "Un historia de GOT", season: season)
+        episode2 = Episode(title: "Las tierras de la noche", releaseDate: episode2ReleaseDate, dirigido: "Alan Taylor", escrito: "Vanessa Taylor", resumen: "Un historia de GOT", season: season)
     }
 
     override func tearDown() {
