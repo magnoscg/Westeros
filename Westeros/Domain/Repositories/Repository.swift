@@ -109,7 +109,7 @@ extension LocalFactory: SeasonFactory {
             let season = Season(name: seasonJson.name, releaseDateSeason: dateformatter.date(from: seasonJson.releaseDateSeason)!)
             
             for episodeJson in seasonJson.episodes {
-                let episode = Episode(title: episodeJson.titulo, releaseDate: dateformatter.date(from: seasonJson.releaseDateSeason)!, dirigido: episodeJson.dirigido, escrito: episodeJson.escrito, resumen: episodeJson.resumen, season: season)
+                let episode = Episode(title: episodeJson.titulo, releaseDate: dateformatter.date(from: episodeJson.fecha)!, dirigido: episodeJson.dirigido, escrito: episodeJson.escrito, resumen: episodeJson.resumen, season: season)
                     season.add(episodes: episode)
                 }
             seasonsResult.append(season)
@@ -134,15 +134,11 @@ extension LocalFactory: SeasonFactory {
     
     
     func season(dated date: Date) -> Season? {
-        let season = seasons.filter {$0.releaseDateSeason == date}.first
+        let season = seasons.first {$0.releaseDateSeason == date}
         return season
     }
     
     func seasons(filteredBy theFilter: (Season) -> Bool) -> [Season] {
         return seasons.filter(theFilter)
-    }
-    
-
-    
-    
+    } 
 }

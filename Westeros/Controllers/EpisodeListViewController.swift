@@ -38,6 +38,15 @@ class EpisodeListViewController: UITableViewController {
         
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(seasonDidChange(notification:)), name: Notification.Name(SEASON_DID_CHANGE_NOTIFICATION_NAME), object: nil)
+        
+        syncModelWithView()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        //Nos damos e baja de las notificaciones
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.removeObserver(self)
     }
     
     //Mark: Notification
@@ -52,7 +61,16 @@ class EpisodeListViewController: UITableViewController {
         
         model = season.sortedEpisodes
         
+        syncModelWithView()
+        
+        let backButton = UIBarButtonItem(title: season.name, style: .plain, target: self, action: Selector(("none")))
+        navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+    }
+    
+    func syncModelWithView() {
+        
         tableView.reloadData()
+    
     }
     
 
@@ -82,7 +100,7 @@ class EpisodeListViewController: UITableViewController {
             cell = UITableViewCell(style: .default, reuseIdentifier: cellId)
         }
         
-        // Sincronizar celda - house ( view - model)
+        // Sincronizar celda - episode ( view - model)
         cell?.textLabel?.text = episode.title
         
         
@@ -104,7 +122,10 @@ class EpisodeListViewController: UITableViewController {
         
         // Avisamos al delegado
         
-        //delegate?.episodeListViewController(self, didSelectEpisode: episode)
+        let episodeDetailViewController = EpisodeDetailViewController(model: episode)
+        
+        
+        episodeDetailViewController.delegate = self
         
         // Emitir la misma info por notificaciones
         //let notificationCenter = NotificationCenter.default
@@ -127,4 +148,12 @@ class EpisodeListViewController: UITableViewController {
     }
 }
 
+extension EpisodeListViewController: EpisodeDetailViewControllerDelegate {
+    func episodeDetailViewController(_ viewController: EpisodeDetailViewController, season: Season) {
+        self.model = season.sortedEpisodes
+        syncModelWithView()
+        viewController.delegate = self
+        
+}
 
+}

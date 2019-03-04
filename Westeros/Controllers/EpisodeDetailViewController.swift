@@ -8,6 +8,11 @@
 
 import UIKit
 
+
+protocol EpisodeDetailViewControllerDelegate {
+    func episodeDetailViewController(_ viewController: EpisodeDetailViewController, season: Season)
+}
+
 class EpisodeDetailViewController: UIViewController {
 
     @IBOutlet weak var episodeName: UILabel!
@@ -17,6 +22,7 @@ class EpisodeDetailViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     var model: Episode
+    var delegate: EpisodeDetailViewControllerDelegate?
     
     init(model: Episode) {
         self.model = model
@@ -45,8 +51,18 @@ class EpisodeDetailViewController: UIViewController {
     
     // Mark: - Notifications
     @objc func seasonDidChange(notification: Notification) {
+        // Sacar el userInfo de la noti, y la casa del userInfo
+        guard let info = notification.userInfo,
+            let season = info[SEASON_KEY] as? Season else {
+                return
+        }
+        
+        // Avisar al delegado
+        delegate?.episodeDetailViewController(self, season: season)
+        
         navigationController?.popViewController(animated: true)
     }
+    
     
     func syncModelWithView() {
         let formatter = DateFormatter()
@@ -57,10 +73,14 @@ class EpisodeDetailViewController: UIViewController {
         directedLabel.text = model.dirigido
         writenLabel.text = model.escrito
         dateLabel.text = formatter.string(from: model.releaseDate)
+        print(formatter.string(from: model.releaseDate))
         descriptionLabel.text = model.resumen
         
         let backButton = UIBarButtonItem(title: model.season?.name, style: .plain, target: self, action: Selector(("none")))
         navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
     }
+    
 }
+
+
 
