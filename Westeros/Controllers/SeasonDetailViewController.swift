@@ -12,6 +12,7 @@ class SeasonDetailViewController: UIViewController {
 
     @IBOutlet weak var seasonName: UILabel!
     
+    @IBOutlet weak var UIimage: UIImageView!
     
     var model: Season
     
@@ -38,6 +39,8 @@ class SeasonDetailViewController: UIViewController {
     func syncModelWithView() {
         title = model.name
         seasonName.text = model.name
+        UIimage.image = UIImage(named: model.name)
+        print(model.name)
     }
     
     func setupUI() {
