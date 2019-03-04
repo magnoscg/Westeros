@@ -73,7 +73,6 @@ class EpisodeDetailViewController: UIViewController {
         directedLabel.text = model.dirigido
         writenLabel.text = model.escrito
         dateLabel.text = formatter.string(from: model.releaseDate)
-        print(formatter.string(from: model.releaseDate))
         descriptionLabel.text = model.resumen
         
         let backButton = UIBarButtonItem(title: model.season?.name, style: .plain, target: self, action: Selector(("none")))

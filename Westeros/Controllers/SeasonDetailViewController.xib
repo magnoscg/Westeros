@@ -23,19 +23,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBU-Re-o4w" userLabel="seasonName">
-                    <rect key="frame" x="363" y="40" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <rect key="frame" x="353.5" y="70" width="61.5" height="31.5"/>
+                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fM8-rb-5tz">
-                    <rect key="frame" x="0.0" y="163" width="768" height="569"/>
+                    <rect key="frame" x="0.0" y="203.5" width="768" height="528.5"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fM8-rb-5tz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DPO-gw-xCd"/>
-                <constraint firstItem="dBU-Re-o4w" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="cqK-yT-VzB"/>
+                <constraint firstItem="dBU-Re-o4w" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="cqK-yT-VzB"/>
                 <constraint firstItem="fM8-rb-5tz" firstAttribute="top" secondItem="dBU-Re-o4w" secondAttribute="bottom" constant="102" id="jru-mt-GUc"/>
                 <constraint firstItem="dBU-Re-o4w" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kRT-Yk-ujY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fM8-rb-5tz" secondAttribute="bottom" constant="292" id="mrM-P5-y4e"/>
