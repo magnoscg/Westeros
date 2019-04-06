@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol EpisodeListViewControllerDelegate: class{
-    
-    func episodeListViewController(_ viewcontroller: EpisodeListViewController, didSelectEpisode: Episode)
-    
-}
+//protocol EpisodeListViewControllerDelegate: class{
+//
+//    func episodeListViewController(_ viewcontroller: EpisodeListViewController, didSelectEpisode: Episode)
+//
+//}
 
 class EpisodeListViewController: UITableViewController {
     
@@ -20,7 +20,7 @@ class EpisodeListViewController: UITableViewController {
     //MARK: Properties
     
     var model: [Episode]
-    weak var delegate: EpisodeListViewControllerDelegate?
+    //weak var delegate: EpisodeListViewControllerDelegate?
     
     init(model: [Episode]){
         self.model = model
@@ -39,17 +39,21 @@ class EpisodeListViewController: UITableViewController {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(seasonDidChange(notification:)), name: Notification.Name(SEASON_DID_CHANGE_NOTIFICATION_NAME), object: nil)
         
-        syncModelWithView()
+        //syncModelWithView()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        //Nos damos e baja de las notificaciones
+    deinit {
         let notificationCenter = NotificationCenter.default
         notificationCenter.removeObserver(self)
     }
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        //Nos damos e baja de las notificaciones
+//        let notificationCenter = NotificationCenter.default
+//        notificationCenter.removeObserver(self)
+//    }
     
-    //Mark: Notification
+    //Mark: Notifications
     
     @objc func seasonDidChange(notification: Notification) {
         
@@ -65,10 +69,11 @@ class EpisodeListViewController: UITableViewController {
         
         let backButton = UIBarButtonItem(title: season.name, style: .plain, target: self, action: Selector(("none")))
         navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        
     }
     
+    
     func syncModelWithView() {
-        
         tableView.reloadData()
     
     }
@@ -77,10 +82,10 @@ class EpisodeListViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    /*override func numberOfSections(in tableView: UITableView) -> Int {
        
         return 1
-    }
+    }*/
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -113,7 +118,8 @@ class EpisodeListViewController: UITableViewController {
         return 60
     }
 
-
+    //MARK: Table View Delegate
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // Averiguar la casa que se ha pulsado
@@ -125,35 +131,18 @@ class EpisodeListViewController: UITableViewController {
         let episodeDetailViewController = EpisodeDetailViewController(model: episode)
         
         
-        episodeDetailViewController.delegate = self
+        //episodeDetailViewController.delegate = self
+        navigationController?.pushViewController(episodeDetailViewController, animated: true)
         
-        // Emitir la misma info por notificaciones
-        //let notificationCenter = NotificationCenter.default
-        
-        //Creamos la notificacion
-      //  let notification = Notification(name: Notification.Name(EPISODE_DID_CHANGE_NOTIFICATION_NAME), object: self, userInfo: [EPISODE_KEY: episode])
-        
-        // enviamos la notificacion
-       // notificationCenter.post(notification)
-        
-        // Guardar el episodio seleccionada
-       // saveLastSelectedEpisode(at: indexPath.row)
-        
-        navigationController?.pushViewController(EpisodeDetailViewController(model: episode), animated: true)
-        
-        /*let houseDetailViewController = HouseDetailViewController(model: house)
-         
-         //vamos a mostrarlo (push)
-         navigationController?.pushViewController(houseDetailViewController, animated: true)*/
     }
 }
 
-extension EpisodeListViewController: EpisodeDetailViewControllerDelegate {
-    func episodeDetailViewController(_ viewController: EpisodeDetailViewController, season: Season) {
-        self.model = season.sortedEpisodes
-        syncModelWithView()
-        viewController.delegate = self
-        
-}
+//extension EpisodeListViewController: EpisodeDetailViewControllerDelegate {
+//    func episodeDetailViewController(_ viewController: EpisodeDetailViewController, season: Season) {
+//        self.model = season.sortedEpisodes
+//        syncModelWithView()
+//        viewController.delegate = self
+//        
+//}
 
-}
+

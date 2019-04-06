@@ -25,7 +25,7 @@ class MemberDetailViewController: UIViewController {
     //MARK: Properties
     
     var model: Person
-    var delegate: MemberDetailViewControllerDelegate?
+    //var delegate: MemberDetailViewControllerDelegate?
     
     
     
@@ -49,6 +49,7 @@ class MemberDetailViewController: UIViewController {
         
         syncModelWithView()
     }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         // Baja en la notificación
@@ -70,15 +71,6 @@ class MemberDetailViewController: UIViewController {
     //Mark: Notification
     
     @objc func houseDidChange(notification: Notification) {
-        // Sacar el userInfo de la noti, y la casa del userInfo
-        guard let info = notification.userInfo,
-            let house = info[HOUSE_KEY] as? House else {
-                return
-        }
-        
-        // Avisar al delegado
-        delegate?.memberDetailViewController(self, house: house)
-        
         navigationController?.popViewController(animated: true)
     }
 }

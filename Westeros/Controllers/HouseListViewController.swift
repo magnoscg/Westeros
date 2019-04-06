@@ -117,7 +117,7 @@ extension HouseListViewController {
         userDefaults.synchronize() // POR SI ACASO (DEPRECATED EN BREVES)
     }
     
-    func lastSelectedHouse() -> House {
+    func lastHouseSelected() -> House {
         // UserDefaults , lo recuperamos
         let userDefaults = UserDefaults.standard
         

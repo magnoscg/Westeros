@@ -50,9 +50,9 @@ class SeasonDetailViewController: UIViewController {
     }
     
     @objc func displayEpisodes() {
-        let episodesViewControler = EpisodeListViewController(model: model.sortedEpisodes)
+        let episodesListViewControler = EpisodeListViewController(model: model.sortedEpisodes)
         
-        navigationController?.pushViewController(episodesViewControler, animated: true)
+        navigationController?.pushViewController(episodesListViewControler, animated: true)
     }
 
 

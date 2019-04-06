@@ -22,7 +22,7 @@ class EpisodeDetailViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     var model: Episode
-    var delegate: EpisodeDetailViewControllerDelegate?
+    //var delegate: EpisodeDetailViewControllerDelegate?
     
     init(model: Episode) {
         self.model = model
@@ -47,20 +47,22 @@ class EpisodeDetailViewController: UIViewController {
         // Baja en la notificación
         let notificationCenter = NotificationCenter.default
         notificationCenter.removeObserver(self)
+        
     }
     
     // Mark: - Notifications
     @objc func seasonDidChange(notification: Notification) {
-        // Sacar el userInfo de la noti, y la casa del userInfo
-        guard let info = notification.userInfo,
-            let season = info[SEASON_KEY] as? Season else {
-                return
-        }
-        
-        // Avisar al delegado
-        delegate?.episodeDetailViewController(self, season: season)
-        
+//        // Sacar el userInfo de la noti, y la casa del userInfo
+//        guard let info = notification.userInfo,
+//            let season = info[SEASON_KEY] as? Season else {
+//                return
+//        }
+//
+//        // Avisar al delegado
+//        delegate?.episodeDetailViewController(self, season: season)
+
         navigationController?.popViewController(animated: true)
+
     }
     
     

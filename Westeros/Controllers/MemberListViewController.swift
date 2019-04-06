@@ -49,13 +49,13 @@ class MemberListViewController: UIViewController {
 
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+    deinit {
         // Nos damos de baja en las notificaciones
+
         let notificationCenter = NotificationCenter.default
         notificationCenter.removeObserver(self)
-        
     }
+    
     
     //Mark: Notification
     
@@ -106,31 +106,19 @@ extension MemberListViewController: UITableViewDataSource {
         // Devolver la celda
         return cell!
     }
+}
+
+extension MemberListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let person = model[indexPath.row]
         
         let memberDetailViewController = MemberDetailViewController(model: person)
         
-        memberDetailViewController.delegate = self
-        
         navigationController?.pushViewController(memberDetailViewController, animated: true)
     }
-    
-}
-extension MemberListViewController: UITableViewDelegate {
-    
 }
 
-extension MemberListViewController: MemberDetailViewControllerDelegate {
-    func memberDetailViewController(_ viewController: MemberDetailViewController, house: House) {
-        self.model = house.sortedMembers
-        tableView.reloadData()
-        viewController.delegate = self
-    }
-    
-    
-}
 
 
 

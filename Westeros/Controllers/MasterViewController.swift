@@ -22,10 +22,14 @@ class MasterViewController: UISplitViewController {
     init(houses: [House], seasons: [Season]) {
         
         houseListViewController = HouseListViewController(model: houses)
+        houseDetailViewController = HouseDetailViewController(model: houseListViewController.lastHouseSelected())
+        
         seasonListViewController = SeasonListViewcontroller(model: seasons)
-        houseDetailViewController = HouseDetailViewController(model: houseListViewController.lastSelectedHouse())
-        seasonDetailViewController = SeasonDetailViewController(model: seasonListViewController.lastSelectedSeason())
+        seasonDetailViewController = SeasonDetailViewController(model: seasonListViewController.lastSeasonSelected())
+        
+        tabBarViewController.viewControllers = [houseListViewController.wrappedInNavigation(),seasonListViewController.wrappedInNavigation()]
         super.init(nibName: nil, bundle: nil)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,20 +37,14 @@ class MasterViewController: UISplitViewController {
     }
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         
-        let houseListNavigationController = houseListViewController.wrappedInNavigation()
-        let seasonListNavigationController = seasonListViewController.wrappedInNavigation()
-        let houseDetailNavigationController = houseDetailViewController.wrappedInNavigation()
-        let seasonDetailNavigationController = seasonDetailViewController.wrappedInNavigation()
-        
-        tabBarViewController.viewControllers = [houseListNavigationController,seasonListNavigationController]
         //delegates
-        
         houseListViewController.delegate = houseDetailViewController
         seasonListViewController.delegate = seasonDetailViewController
         tabBarViewController.delegate = self
         
-        viewControllers = [tabBarViewController,houseDetailNavigationController,seasonDetailNavigationController]
+        viewControllers = [tabBarViewController,houseDetailViewController.wrappedInNavigation(),seasonDetailViewController.wrappedInNavigation()]
     }
 
 }
