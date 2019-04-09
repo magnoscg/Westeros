@@ -59,8 +59,8 @@ class SeasonDetailViewController: UIViewController {
 }
 
 extension SeasonDetailViewController: SeasonListViewControllerDelegate{
-    func seasonListViewController(_viewcontroller: SeasonListViewcontroller, didSelectSeason season: Season) {
-        model = season
+    func seasonListViewController(_ viewcontroller: SeasonListViewcontroller, didSelectSeason season: Season) {
+        self.model = season
         syncModelWithView()
         
     }

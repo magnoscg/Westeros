@@ -13,7 +13,7 @@ protocol HouseListViewControllerDelegate: class {
     //should
     // Will
     // Did
-    func houseListViewController(_ viewcontroller: HouseListViewController,didSelectHouse: House)
+    func houseListViewController(_ viewcontroller: HouseListViewController,didSelectHouse house: House)
     
     
 }
@@ -97,11 +97,6 @@ class HouseListViewController: UITableViewController {
         // Guardar la casa seleccionada
         saveLastSelectedHouse(at: indexPath.row)
         
-        
-        /*let houseDetailViewController = HouseDetailViewController(model: house)
-
-        //vamos a mostrarlo (push)
-        navigationController?.pushViewController(houseDetailViewController, animated: true)*/
     }
 }
 
@@ -117,7 +112,7 @@ extension HouseListViewController {
         userDefaults.synchronize() // POR SI ACASO (DEPRECATED EN BREVES)
     }
     
-    func lastHouseSelected() -> House {
+    func lastSelectedHouse() -> House {
         // UserDefaults , lo recuperamos
         let userDefaults = UserDefaults.standard
         
@@ -133,8 +128,11 @@ extension HouseListViewController {
     }
 }
 
-extension HouseListViewController: UISplitViewControllerDelegate {
-    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
-        return true
+extension HouseListViewController: HouseListViewControllerDelegate {
+    func houseListViewController(_ viewcontroller: HouseListViewController, didSelectHouse house: House) {
+        let houseDetailViewController = HouseDetailViewController(model: house)
+        navigationController?.pushViewController(houseDetailViewController, animated: true)
     }
+    
+    
 }

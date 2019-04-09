@@ -37,6 +37,7 @@ class HouseDetailViewController: UIViewController {
         super.viewWillAppear(animated)
         syncModelWithView()
         setupUI()
+        
     }
     
     func syncModelWithView() {

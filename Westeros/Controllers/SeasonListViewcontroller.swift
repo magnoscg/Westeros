@@ -10,7 +10,7 @@ import UIKit
 
 protocol SeasonListViewControllerDelegate: class {
     
-    func seasonListViewController(_viewcontroller: SeasonListViewcontroller,didSelectSeason: Season)
+    func seasonListViewController(_ viewcontroller: SeasonListViewcontroller,didSelectSeason season: Season)
 }
 
 class SeasonListViewcontroller: UITableViewController {
@@ -26,6 +26,7 @@ class SeasonListViewcontroller: UITableViewController {
         title = "Temporadas"
         
     }
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -69,13 +70,15 @@ class SeasonListViewcontroller: UITableViewController {
         
         let season = model[indexPath.row]
         
-        delegate?.seasonListViewController(_viewcontroller: self, didSelectSeason: season)
+        delegate?.seasonListViewController(self, didSelectSeason: season)
         
         let notificationCenter = NotificationCenter.default
         
         let notification = Notification(name: Notification.Name(SEASON_DID_CHANGE_NOTIFICATION_NAME), object: self, userInfo: [SEASON_KEY: season])
         
         notificationCenter.post(notification)
+        
+        saveLastSelectedSeason(at: indexPath.row)
 
     }
 }
@@ -101,8 +104,12 @@ extension SeasonListViewcontroller {
     }
 }
 
-extension SeasonListViewcontroller: UISplitViewControllerDelegate {
-    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
-        return true
+extension SeasonListViewcontroller: SeasonListViewControllerDelegate {
+    func seasonListViewController(_ viewcontroller: SeasonListViewcontroller, didSelectSeason season: Season) {
+        let seasonDetailViewController = SeasonDetailViewController(model: season)
+        navigationController?.pushViewController(seasonDetailViewController, animated: true)
     }
+    
+
+    
 }

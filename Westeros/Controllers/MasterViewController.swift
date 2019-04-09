@@ -10,24 +10,35 @@ import UIKit
 
 class MasterViewController: UISplitViewController {
 
-    var houseListViewController: HouseListViewController
-    var seasonListViewController: SeasonListViewcontroller
-    var houseDetailViewController: HouseDetailViewController
-    var seasonDetailViewController: SeasonDetailViewController
-
+    let houseListViewController: HouseListViewController
+    let seasonListViewController: SeasonListViewcontroller
+    let houseDetailViewController: HouseDetailViewController
+    let seasonDetailViewController: SeasonDetailViewController
     
-    var tabBarViewController = UITabBarController()
+    var houseListNavigation: UINavigationController!
+    var seasonListNavigation: UINavigationController!
+    var houseDetailNavigation: UINavigationController!
+    var seasonDetailNavigation: UINavigationController!
+    
+    let tabBarViewController = UITabBarController()
     
     
     init(houses: [House], seasons: [Season]) {
         
         houseListViewController = HouseListViewController(model: houses)
-        houseDetailViewController = HouseDetailViewController(model: houseListViewController.lastHouseSelected())
+        houseDetailViewController = HouseDetailViewController(model: houseListViewController.lastSelectedHouse())
         
         seasonListViewController = SeasonListViewcontroller(model: seasons)
         seasonDetailViewController = SeasonDetailViewController(model: seasonListViewController.lastSeasonSelected())
         
-        tabBarViewController.viewControllers = [houseListViewController.wrappedInNavigation(),seasonListViewController.wrappedInNavigation()]
+        // Creamos los navigations
+        houseListNavigation = houseListViewController.wrappedInNavigation()
+        seasonListNavigation = seasonListViewController.wrappedInNavigation()
+        houseDetailNavigation = houseDetailViewController.wrappedInNavigation()
+        seasonDetailNavigation = seasonDetailViewController.wrappedInNavigation()
+        
+        tabBarViewController.viewControllers = [houseListNavigation,seasonListNavigation]
+        
         super.init(nibName: nil, bundle: nil)
         
     }
@@ -37,27 +48,43 @@ class MasterViewController: UISplitViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
-        //delegates
-        houseListViewController.delegate = houseDetailViewController
-        seasonListViewController.delegate = seasonDetailViewController
+        
+        // Asignamos delegados ipad o iphone
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            houseListViewController.delegate = houseDetailViewController
+            seasonListViewController.delegate = seasonDetailViewController
+            
+
+        } else {
+            houseListViewController.delegate = houseListViewController
+            seasonListViewController.delegate = seasonListViewController
+            //houseListViewController.delegate = houseDetailViewController
+            //seasonListViewController.delegate = seasonDetailViewController
+            
+        }
+        
         tabBarViewController.delegate = self
+        viewControllers = [tabBarViewController,houseDetailNavigation]
+        preferredDisplayMode = .allVisible
         
-        viewControllers = [tabBarViewController,houseDetailViewController.wrappedInNavigation(),seasonDetailViewController.wrappedInNavigation()]
+        
+        super.viewDidLoad()
+       
     }
 
+    
 }
 
 extension MasterViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        if (isCollapsed == false){
-            if tabBarViewController.selectedIndex == 0 {
-                self.delegate = houseListViewController
-                show(houseDetailViewController.wrappedInNavigation(), sender: self)
-            }else {
-                self.delegate = seasonListViewController
-                show(seasonDetailViewController.wrappedInNavigation(), sender: self)
+        
+        if isCollapsed == false {
+            if tabBarController.selectedIndex == 1 {
+                show(seasonDetailNavigation, sender: self)
+            } else {
+                
+                show(houseDetailViewController,sender: self)
             }
         }
     }
