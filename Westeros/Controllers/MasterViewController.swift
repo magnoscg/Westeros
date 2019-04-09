@@ -39,6 +39,9 @@ class MasterViewController: UISplitViewController {
         
         tabBarViewController.viewControllers = [houseListNavigation,seasonListNavigation]
         
+
+       
+
         super.init(nibName: nil, bundle: nil)
         
     }
@@ -59,18 +62,37 @@ class MasterViewController: UISplitViewController {
         } else {
             houseListViewController.delegate = houseListViewController
             seasonListViewController.delegate = seasonListViewController
-            //houseListViewController.delegate = houseDetailViewController
-            //seasonListViewController.delegate = seasonDetailViewController
+   
             
         }
+        
         
         tabBarViewController.delegate = self
         viewControllers = [tabBarViewController,houseDetailNavigation]
         preferredDisplayMode = .allVisible
         
+        customTabBar()
         
         super.viewDidLoad()
        
+    }
+    
+    func customTabBar() {
+        
+        //TabBar Title size
+        let appearance = UITabBarItem.appearance()
+        let attributes = [NSAttributedString.Key.font:UIFont(name: "Helvetica Neue", size: 12)]
+        appearance.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
+        
+        
+        //Icons for tabBarController
+        let houseIcon = tabBarViewController.tabBar.items?[0]
+        houseIcon?.image = UIImage(named: "house")
+        
+        
+        let seasonIcon = tabBarViewController.tabBar.items?[1]
+        seasonIcon?.image = UIImage(named: "season")
+        
     }
 
     
@@ -79,13 +101,19 @@ class MasterViewController: UISplitViewController {
 extension MasterViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         
-        if isCollapsed == false {
-            if tabBarController.selectedIndex == 1 {
-                show(seasonDetailNavigation, sender: self)
-            } else {
-                
-                show(houseDetailViewController,sender: self)
-            }
+        guard let navigationController = viewController as? UINavigationController,
+            let viewController = navigationController.viewControllers.first else { return }
+        
+        let detailNavigation: UINavigationController
+        if type(of: viewController ) == SeasonListViewcontroller.self {
+            detailNavigation = seasonDetailNavigation
+        } else {
+            detailNavigation = houseDetailNavigation
+        }
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            showDetailViewController(detailNavigation, sender: nil)
         }
     }
 }
+

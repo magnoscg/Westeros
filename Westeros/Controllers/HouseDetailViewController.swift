@@ -53,7 +53,7 @@ class HouseDetailViewController: UIViewController {
         let wikiButton = UIBarButtonItem(title: "Wiki", style: .plain, target: self, action: #selector(displayWiki))
         
         
-        let membersButton = UIBarButtonItem(title: "Members", style: .plain, target: self, action: #selector(displayMembers))
+        let membersButton = UIBarButtonItem(title: "Miembros", style: .plain, target: self, action: #selector(displayMembers))
         
         // Mostrar los botones
         navigationItem.rightBarButtonItems = [membersButton, wikiButton]
