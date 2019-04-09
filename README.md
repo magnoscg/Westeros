@@ -16,6 +16,8 @@ App for Game Of Thrones fans developed for Iphone and Ipad.
 ---------------------------------
 ## Screenshots
 
+![iphone](https://github.com/magnoscg/Westeros/blob/master/iphone.png)
+![ipad](https://github.com/magnoscg/Westeros/blob/master/Westeros%20Demo.gif)
 
 ----------------------------------
 ## Requirements
